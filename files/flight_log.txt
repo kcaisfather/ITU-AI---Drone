@@ -1,0 +1,4948 @@
+
+Mode TEST 
+
+Current index: 11
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 12
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 13
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 14
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 15
+Predicted r: 5.34, Noise coeff: 5.697, Covariance sum: 0.728
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.845, y: 25.4, z: 0.655, psi: -51.0 deg
+Current index: 16
+Predicted r: 1.36, Noise coeff: 5.385, Covariance sum: 0.708
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.464, y: 28.7, z: -1.82, psi: -76.7 deg
+Current index: 17
+Predicted r: 8.76, Noise coeff: 6.786, Covariance sum: 0.695
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.89, y: 21.3, z: -2.18, psi: -42.8 deg
+Current index: 18
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.7
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 19
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.696
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 20
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.584
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 21
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 22
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.277, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 23
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.276, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 24
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.283, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 25
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.281, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 26
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.274, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 27
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.284, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 28
+Predicted r: 8.65, Noise coeff: 6.57, Covariance sum: 0.154
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.012, y: 21.4, z: -2.47, psi: -97.8 deg
+Current index: 29
+Predicted r: 7.52, Noise coeff: 6.809, Covariance sum: 0.213
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.09, y: 23.5, z: 1.58, psi: -61.0 deg
+Current index: 30
+Predicted r: 9.19, Noise coeff: 5.183, Covariance sum: 0.233
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.23, y: 20.9, z: -2.19, psi: -15.7 deg
+Current index: 31
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.218
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.282, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 32
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.222
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.281, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 33
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.241
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.272, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 34
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.183
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.285, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 35
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.282, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 36
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.278, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 37
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.28, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 38
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.287, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 39
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.285, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 40
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.279, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 41
+Predicted r: 8.73, Noise coeff: 5.041, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.401, y: 21.3, z: -1.83, psi: -89.9 deg
+Current index: 42
+Predicted r: 5.97, Noise coeff: 6.108, Covariance sum: 0.254
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.13, y: 24.9, z: 0.948, psi: -57.5 deg
+Current index: 43
+Predicted r: 1.63, Noise coeff: 5.255, Covariance sum: 0.752
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.254, y: 28.4, z: -2.18, psi: -67.8 deg
+Current index: 44
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.735
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.287, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 45
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.748
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 46
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.755
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 47
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.664
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 48
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.283, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 49
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.181
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 50
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.284, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 51
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 52
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 53
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.286, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 54
+Predicted r: 7.67, Noise coeff: 6.886, Covariance sum: 0.158
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.635, y: 22.4, z: -2.01, psi: -94.2 deg
+Current index: 55
+Predicted r: 3.24, Noise coeff: 4.96, Covariance sum: 0.422
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.736, y: 27.0, z: -1.03, psi: -41.7 deg
+Current index: 56
+Predicted r: 7.4, Noise coeff: 6.608, Covariance sum: 0.42
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.67, y: 23.5, z: 1.19, psi: -60.1 deg
+Current index: 57
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.42
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 58
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.419
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.288, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 59
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.433
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 60
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 61
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 62
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 63
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 64
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 65
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 66
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 67
+Predicted r: 7.77, Noise coeff: 4.806, Covariance sum: 0.151
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.532, y: 22.3, z: -3.14, psi: -1.07e+02 deg
+Current index: 68
+Predicted r: 5.37, Noise coeff: 5.248, Covariance sum: 0.267
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.927, y: 25.5, z: 0.702, psi: -52.3 deg
+Current index: 69
+Predicted r: 1.36, Noise coeff: 4.467, Covariance sum: 0.696
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.396, y: 28.7, z: -1.99, psi: -77.7 deg
+Current index: 70
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.679
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 71
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.692
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 72
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.711
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 73
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.593
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 74
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 75
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.179
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 76
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 77
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 78
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 79
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 80
+Predicted r: 0.86, Noise coeff: 7.032, Covariance sum: 0.377
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.362, y: 29.3, z: -1.63, psi: -1.21e+02 deg
+Current index: 81
+Predicted r: 4.45, Noise coeff: 5.232, Covariance sum: 0.417
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.953, y: 25.9, z: -3.32, psi: -57.1 deg
+Current index: 82
+Predicted r: 7.81, Noise coeff: 6.707, Covariance sum: 0.428
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.45, y: 22.6, z: -2.42, psi: -37.2 deg
+Current index: 83
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.418
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 84
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.417
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 85
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.211
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.87, psi: -74.7 deg
+Current index: 86
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 87
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.158
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 88
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 89
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 90
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 91
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 92
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 93
+Predicted r: 1.93, Noise coeff: 5.119, Covariance sum: 0.494
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.557, y: 28.5, z: -0.9, psi: -32.3 deg
+Current index: 94
+Predicted r: 0.571, Noise coeff: 5.405, Covariance sum: 0.926
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.117, y: 29.4, z: -1.93, psi: -99.0 deg
+Current index: 95
+Predicted r: 5.99, Noise coeff: 5.433, Covariance sum: 0.96
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.79, y: 25.0, z: 1.23, psi: -57.4 deg
+Current index: 96
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.954
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 97
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.951
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 98
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.628
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.286, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 99
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.195
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 100
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.16
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 101
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.287, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 102
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 103
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 104
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 105
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 106
+Predicted r: 7.32, Noise coeff: 7.403, Covariance sum: 0.227
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.44, y: 23.8, z: 1.63, psi: -60.4 deg
+Current index: 107
+Predicted r: 8.63, Noise coeff: 7.602, Covariance sum: 0.248
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.51, y: 22.0, z: 0.0984, psi: -46.9 deg
+Current index: 108
+Predicted r: 5.48, Noise coeff: 5.899, Covariance sum: 0.292
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.0206, y: 24.5, z: -2.13, psi: -1.11e+02 deg
+Current index: 109
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.308
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 110
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.305
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 111
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.251
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 112
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.23
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 113
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.187
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 114
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 115
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 116
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 117
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 118
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 119
+Predicted r: 4.22, Noise coeff: 6.158, Covariance sum: 0.344
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.03, y: 26.0, z: -1.4, psi: -51.6 deg
+Current index: 120
+Predicted r: 8.33, Noise coeff: 6.663, Covariance sum: 0.354
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.67, y: 22.3, z: 0.797, psi: -54.4 deg
+Current index: 121
+Predicted r: 7.98, Noise coeff: 6.026, Covariance sum: 0.332
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.715, y: 22.1, z: -2.33, psi: -99.4 deg
+Current index: 122
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.35
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.288, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 123
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.345
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 124
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 125
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 126
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.188
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 127
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 128
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 129
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 130
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 131
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 132
+Predicted r: 4.51, Noise coeff: 6.511, Covariance sum: 0.295
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.979, y: 25.8, z: -3.31, psi: -54.9 deg
+Current index: 133
+Predicted r: 7.7, Noise coeff: 6.297, Covariance sum: 0.282
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.38, y: 22.3, z: -2.28, psi: -68.2 deg
+Current index: 134
+Predicted r: 7.7, Noise coeff: 5.961, Covariance sum: 0.283
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.361, y: 22.3, z: -2.25, psi: -69.5 deg
+Current index: 135
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.287
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.287, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 136
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.285
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 137
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 138
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 139
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -74.5 deg
+Current index: 140
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 141
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 142
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 143
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 144
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 145
+Predicted r: 8.34, Noise coeff: 6.129, Covariance sum: 0.153
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.152, y: 21.7, z: -2.47, psi: -1.04e+02 deg
+Current index: 146
+Predicted r: 2.55, Noise coeff: 6.552, Covariance sum: 0.457
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.658, y: 27.8, z: -0.827, psi: -31.7 deg
+Current index: 147
+Predicted r: 1.38, Noise coeff: 5.084, Covariance sum: 0.923
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.336, y: 28.7, z: -1.97, psi: -85.9 deg
+Current index: 148
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.906
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 149
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.917
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.285, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 150
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.933
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 151
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.629
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 152
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.16
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 153
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 154
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 155
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 156
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.288, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 157
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 158
+Predicted r: 7.96, Noise coeff: 6.135, Covariance sum: 0.154
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.769, y: 22.1, z: -2.04, psi: -97.6 deg
+Current index: 159
+Predicted r: 8.6, Noise coeff: 6.607, Covariance sum: 0.199
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.35, y: 21.8, z: 0.127, psi: -50.2 deg
+Current index: 160
+Predicted r: 3.6, Noise coeff: 6.714, Covariance sum: 0.421
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.487, y: 27.0, z: -0.0951, psi: -46.2 deg
+Current index: 161
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.406
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 162
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.416
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 163
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.432
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.287, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 164
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.388
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 165
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 166
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.181
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 167
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.89, psi: -74.6 deg
+Current index: 168
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 169
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 170
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 171
+Predicted r: 1.56, Noise coeff: 5.976, Covariance sum: 0.719
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.151, y: 28.5, z: -2.28, psi: -72.3 deg
+Current index: 172
+Predicted r: 1.22, Noise coeff: 5.523, Covariance sum: 1.22
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.434, y: 28.9, z: -1.67, psi: -76.4 deg
+Current index: 173
+Predicted r: 7.68, Noise coeff: 5.843, Covariance sum: 1.2
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 22.3, z: -2.31, psi: -71.3 deg
+Current index: 174
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 1.22
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 175
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 1.21
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 176
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.663
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 177
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 178
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.18
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 179
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.161
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 180
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 181
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 182
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 183
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 184
+Predicted r: 7.7, Noise coeff: 5.611, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.378, y: 22.3, z: -2.28, psi: -68.3 deg
+Current index: 185
+Predicted r: 2.64, Noise coeff: 4.175, Covariance sum: 0.497
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.724, y: 27.6, z: -1.03, psi: -43.6 deg
+Current index: 186
+Predicted r: 2.51, Noise coeff: 6.173, Covariance sum: 0.847
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.52, y: 27.5, z: -2.07, psi: -74.7 deg
+Current index: 187
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.83
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 188
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.839
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 189
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.836
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 190
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.51
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 191
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.159
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 192
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 193
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 194
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 195
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 196
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.309, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 197
+Predicted r: 7.7, Noise coeff: 5.578, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.38, y: 22.3, z: -2.28, psi: -68.2 deg
+Current index: 198
+Predicted r: 4.54, Noise coeff: 7.209, Covariance sum: 0.296
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.707, y: 25.5, z: -2.43, psi: -54.4 deg
+Current index: 199
+Predicted r: 1.53, Noise coeff: 6.056, Covariance sum: 0.515
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.414, y: 29.0, z: -0.948, psi: -37.8 deg
+Current index: 200
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.499
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 201
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.511
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 202
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.508
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 203
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.383
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 204
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 205
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 206
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.327, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 207
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 208
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 209
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 210
+Predicted r: 1.69, Noise coeff: 5.992, Covariance sum: 0.527
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.582, y: 28.5, z: -1.41, psi: -42.3 deg
+Current index: 211
+Predicted r: 8.95, Noise coeff: 7.254, Covariance sum: 0.519
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.69, y: 21.5, z: -1.98, psi: -32.7 deg
+Current index: 212
+Predicted r: 5.84, Noise coeff: 4.522, Covariance sum: 0.517
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.125, y: 24.2, z: -2.87, psi: -78.6 deg
+Current index: 213
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.531
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 214
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.527
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 215
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 216
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.18
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 217
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.182
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 218
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 219
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 220
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 221
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 222
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 223
+Predicted r: 4.24, Noise coeff: 7.099, Covariance sum: 0.329
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.5, y: 25.9, z: -2.76, psi: -62.0 deg
+Current index: 224
+Predicted r: 8.85, Noise coeff: 6.461, Covariance sum: 0.353
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.3, y: 21.6, z: -0.36, psi: -40.4 deg
+Current index: 225
+Predicted r: 4.81, Noise coeff: 5.392, Covariance sum: 0.461
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.781, y: 25.7, z: -0.0224, psi: -37.9 deg
+Current index: 226
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.446
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 227
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.45
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 228
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.293
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 229
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.269
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 230
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.161
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.89, psi: -74.6 deg
+Current index: 231
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 232
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 233
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 234
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 235
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 236
+Predicted r: 2.12, Noise coeff: 7.678, Covariance sum: 0.477
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.525, y: 28.4, z: -0.668, psi: -24.2 deg
+Current index: 237
+Predicted r: 7.7, Noise coeff: 7.377, Covariance sum: 0.459
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.38, y: 22.3, z: -2.28, psi: -68.2 deg
+Current index: 238
+Predicted r: 0.826, Noise coeff: 4.778, Covariance sum: 0.572
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.169, y: 29.2, z: -1.95, psi: -96.1 deg
+Current index: 239
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.597
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 240
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.594
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 241
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.288
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 242
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.304
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 243
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.19
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 244
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.89, psi: -74.6 deg
+Current index: 245
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 246
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.9, psi: -75.0 deg
+Current index: 247
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.9, psi: -74.9 deg
+Current index: 248
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.332, y: 20.7, z: -1.9, psi: -75.0 deg
+Current index: 249
+Predicted r: 7.69, Noise coeff: 5.946, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.388, y: 22.3, z: -2.25, psi: -69.7 deg
+Current index: 250
+Predicted r: 6.92, Noise coeff: 4.442, Covariance sum: 0.209
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.99, y: 23.4, z: -1.71, psi: -42.1 deg
+Current index: 251
+Predicted r: 1.95, Noise coeff: 4.998, Covariance sum: 0.484
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.513, y: 28.6, z: -0.738, psi: -29.0 deg
+Current index: 252
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.469
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 253
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.484
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 254
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.481
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.9, psi: -75.1 deg
+Current index: 255
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.443
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.9, psi: -75.1 deg
+Current index: 256
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.9, psi: -75.1 deg
+Current index: 257
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.182
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.9, psi: -75.2 deg
+Current index: 258
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.9, psi: -74.8 deg
+Current index: 259
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.332, y: 20.7, z: -1.9, psi: -75.0 deg
+Current index: 260
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.9, psi: -75.2 deg
+Current index: 261
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.9, psi: -75.1 deg
+Current index: 262
+Predicted r: 7.86, Noise coeff: 6.423, Covariance sum: 0.151
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.403, y: 22.2, z: -2.5, psi: -1.04e+02 deg
+Current index: 263
+Predicted r: 4.14, Noise coeff: 7.707, Covariance sum: 0.325
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.893, y: 26.0, z: -1.82, psi: -53.1 deg
+Current index: 264
+Predicted r: 0.907, Noise coeff: 5.839, Covariance sum: 0.589
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.364, y: 29.3, z: -1.59, psi: -1.05e+02 deg
+Current index: 265
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.572
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.9, psi: -75.0 deg
+Current index: 266
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.58
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.334, y: 20.7, z: -1.9, psi: -75.2 deg
+Current index: 267
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.597
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 268
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.422
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 269
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.158
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.9, psi: -75.0 deg
+Current index: 270
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 271
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 272
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.9, psi: -74.8 deg
+Current index: 273
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.334, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 274
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 275
+Predicted r: 1.68, Noise coeff: 5.912, Covariance sum: 0.677
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.4, y: 28.4, z: -2.06, psi: -79.6 deg
+Current index: 276
+Predicted r: 5.88, Noise coeff: 7.41, Covariance sum: 0.666
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.48, y: 24.3, z: -2.05, psi: -36.8 deg
+Current index: 277
+Predicted r: 7.72, Noise coeff: 5.573, Covariance sum: 0.712
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.65, y: 23.2, z: 1.34, psi: -59.4 deg
+Current index: 278
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.698
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.9, psi: -75.2 deg
+Current index: 279
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.699
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.9, psi: -74.7 deg
+Current index: 280
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.192
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.332, y: 20.7, z: -1.9, psi: -74.9 deg
+Current index: 281
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.202
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.9, psi: -75.2 deg
+Current index: 282
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.156
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.9, psi: -75.1 deg
+Current index: 283
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.9, psi: -74.9 deg
+Current index: 284
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 285
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.9, psi: -75.3 deg
+Current index: 286
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.9, psi: -74.8 deg
+Current index: 287
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 288
+Predicted r: 7.83, Noise coeff: 7.016, Covariance sum: 0.217
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.96, y: 23.1, z: 1.14, psi: -57.8 deg
+Current index: 289
+Predicted r: 8.47, Noise coeff: 6.802, Covariance sum: 0.2
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.562, y: 21.5, z: -2.09, psi: -78.0 deg
+Current index: 290
+Predicted r: 1.9, Noise coeff: 5.777, Covariance sum: 0.536
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.622, y: 28.3, z: -1.37, psi: -36.8 deg
+Current index: 291
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.52
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.333, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 292
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.535
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 293
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.487
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 294
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.504
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.334, y: 20.7, z: -1.9, psi: -75.3 deg
+Current index: 295
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.327, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 296
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.183
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.9, psi: -75.2 deg
+Current index: 297
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.9, psi: -74.9 deg
+Current index: 298
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 299
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 300
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 301
+Predicted r: 8.99, Noise coeff: 6.189, Covariance sum: 0.207
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.64, y: 21.5, z: -0.786, psi: -34.4 deg
+Current index: 302
+Predicted r: 2.09, Noise coeff: 7.777, Covariance sum: 0.764
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.227, y: 27.9, z: -2.2, psi: -80.0 deg
+Current index: 303
+Predicted r: 1.95, Noise coeff: 5.592, Covariance sum: 1.3
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.45, y: 28.1, z: -1.96, psi: -76.3 deg
+Current index: 304
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 1.29
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 305
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 1.3
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.327, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 306
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 1.26
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.327, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 307
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.703
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 308
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.335, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 309
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 310
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 311
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.331, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 312
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 313
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.89, psi: -75.6 deg
+Current index: 314
+Predicted r: 0.853, Noise coeff: 5.302, Covariance sum: 0.263
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 29.5, z: -1.38, psi: -78.7 deg
+Current index: 315
+Predicted r: 1.23, Noise coeff: 6.593, Covariance sum: 0.407
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.433, y: 28.9, z: -1.54, psi: -51.7 deg
+Current index: 316
+Predicted r: 7.32, Noise coeff: 4.441, Covariance sum: 0.383
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.698, y: 22.7, z: -2.01, psi: -1.09e+02 deg
+Current index: 317
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.405
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.89, psi: -75.5 deg
+Current index: 318
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.396
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.333, y: 20.7, z: -1.9, psi: -75.4 deg
+Current index: 319
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.303
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.89, psi: -75.5 deg
+Current index: 320
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.158
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.89, psi: -75.5 deg
+Current index: 321
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.182
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 322
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.158
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.335, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 323
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.329, y: 20.7, z: -1.89, psi: -75.7 deg
+Current index: 324
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.89, psi: -75.5 deg
+Current index: 325
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.33, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 326
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.89, psi: -75.5 deg
+Current index: 327
+Predicted r: 4.39, Noise coeff: 6.24, Covariance sum: 0.317
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.172, y: 25.7, z: -2.8, psi: -78.7 deg
+Current index: 328
+Predicted r: 1.3, Noise coeff: 6.785, Covariance sum: 0.774
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.365, y: 28.8, z: -1.99, psi: -78.4 deg
+Current index: 329
+Predicted r: 2.29, Noise coeff: 5.176, Covariance sum: 0.96
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.578, y: 28.2, z: -0.639, psi: -28.0 deg
+Current index: 330
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.944
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.89, psi: -75.6 deg
+Current index: 331
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.951
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.88, psi: -75.6 deg
+Current index: 332
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.8
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.327, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 333
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.342
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 334
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.156
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 335
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 336
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.327, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 337
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 338
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 339
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 340
+Predicted r: 7.71, Noise coeff: 6.872, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.366, y: 22.3, z: -2.27, psi: -69.0 deg
+Current index: 341
+Predicted r: 9.45, Noise coeff: 6.393, Covariance sum: 0.182
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.259, y: 20.6, z: -1.76, psi: -68.5 deg
+Current index: 342
+Predicted r: 3.53, Noise coeff: 5.329, Covariance sum: 0.43
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.812, y: 26.6, z: -1.73, psi: -61.1 deg
+Current index: 343
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.415
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 344
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.424
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 345
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.424
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 346
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.412
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 347
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 348
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.18
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 349
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 350
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 351
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 352
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 353
+Predicted r: 1.13, Noise coeff: 6.24, Covariance sum: 0.324
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.362, y: 29.4, z: -1.13, psi: -61.1 deg
+Current index: 354
+Predicted r: 8.75, Noise coeff: 5.819, Covariance sum: 0.303
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.0739, y: 21.3, z: -3.01, psi: -98.2 deg
+Current index: 355
+Predicted r: 1.06, Noise coeff: 5.882, Covariance sum: 0.341
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.412, y: 29.1, z: -1.7, psi: -96.0 deg
+Current index: 356
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.353
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 357
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.351
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 358
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.199
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.89, psi: -75.5 deg
+Current index: 359
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.218
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 360
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 361
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 362
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 363
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 364
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 365
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.89, psi: -75.5 deg
+Current index: 366
+Predicted r: 6.22, Noise coeff: 7.313, Covariance sum: 0.179
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.241, y: 23.8, z: -2.65, psi: -81.3 deg
+Current index: 367
+Predicted r: 6.15, Noise coeff: 6.713, Covariance sum: 0.195
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.196, y: 23.9, z: -2.41, psi: -1.01e+02 deg
+Current index: 368
+Predicted r: 6.41, Noise coeff: 4.548, Covariance sum: 0.267
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.845, y: 24.7, z: 1.43, psi: -59.2 deg
+Current index: 369
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.252
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 370
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.255
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 371
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.246
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 372
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.231
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 373
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.159
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 374
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 375
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 376
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 377
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 378
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 379
+Predicted r: 5.21, Noise coeff: 7.127, Covariance sum: 0.265
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.35, y: 25.0, z: -1.34, psi: -47.0 deg
+Current index: 380
+Predicted r: 7.47, Noise coeff: 5.754, Covariance sum: 0.243
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.312, y: 22.5, z: -1.99, psi: -90.9 deg
+Current index: 381
+Predicted r: 7.73, Noise coeff: 5.084, Covariance sum: 0.225
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.0864, y: 22.3, z: -3.07, psi: -1.01e+02 deg
+Current index: 382
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.24
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 383
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.236
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 384
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.145
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 385
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 386
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.185
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 387
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 388
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.327, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 389
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 390
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 391
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 392
+Predicted r: 0.92, Noise coeff: 7.523, Covariance sum: 0.378
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.42, y: 29.3, z: -1.56, psi: -1.17e+02 deg
+Current index: 393
+Predicted r: 1.45, Noise coeff: 5.54, Covariance sum: 0.51
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.469, y: 29.1, z: -0.952, psi: -52.4 deg
+Current index: 394
+Predicted r: 7.71, Noise coeff: 5.924, Covariance sum: 0.491
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.365, y: 22.3, z: -2.27, psi: -69.0 deg
+Current index: 395
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.502
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 396
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.495
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 397
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.289
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 398
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.156
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 399
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 400
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.161
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.88, psi: -75.5 deg
+Current index: 401
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.89, psi: -75.5 deg
+Current index: 402
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 403
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 404
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 405
+Predicted r: 9.4, Noise coeff: 6.423, Covariance sum: 0.226
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.49, y: 20.9, z: -2.03, psi: 8.51 deg
+Current index: 406
+Predicted r: 8.25, Noise coeff: 5.035, Covariance sum: 0.213
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.619, y: 21.8, z: -2.55, psi: -57.5 deg
+Current index: 407
+Predicted r: 1.27, Noise coeff: 6.599, Covariance sum: 0.674
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.373, y: 28.8, z: -2.01, psi: -99.2 deg
+Current index: 408
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.657
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 409
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.668
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 410
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.612
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 411
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.625
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 412
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 413
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.18
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 414
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 415
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 416
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 417
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 418
+Predicted r: 8.76, Noise coeff: 5.922, Covariance sum: 0.153
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.48, y: 21.3, z: -2.79, psi: -97.6 deg
+Current index: 419
+Predicted r: 1.66, Noise coeff: 4.559, Covariance sum: 0.503
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.56, y: 28.5, z: -1.48, psi: -52.5 deg
+Current index: 420
+Predicted r: 8.1, Noise coeff: 5.585, Covariance sum: 0.483
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.25, y: 22.0, z: -2.41, psi: -92.1 deg
+Current index: 421
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.507
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 422
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.501
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 423
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.521
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 424
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 425
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.19
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 426
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 427
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 428
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 429
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 430
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 431
+Predicted r: 2.19, Noise coeff: 5.455, Covariance sum: 0.683
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.143, y: 27.8, z: -2.26, psi: -74.0 deg
+Current index: 432
+Predicted r: 3.37, Noise coeff: 6.53, Covariance sum: 0.941
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.736, y: 26.8, z: -2.68, psi: -63.0 deg
+Current index: 433
+Predicted r: 8.51, Noise coeff: 6.011, Covariance sum: 0.919
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.0974, y: 21.5, z: -2.06, psi: -99.9 deg
+Current index: 434
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.938
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 435
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.931
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 436
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.421
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 437
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.161
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 438
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.183
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 439
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 440
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 441
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 442
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 443
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 444
+Predicted r: 2.23, Noise coeff: 5.774, Covariance sum: 0.569
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.727, y: 28.0, z: -1.49, psi: -48.9 deg
+Current index: 445
+Predicted r: 2.91, Noise coeff: 5.356, Covariance sum: 0.79
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.792, y: 27.6, z: -0.606, psi: -29.3 deg
+Current index: 446
+Predicted r: 7.7, Noise coeff: 5.647, Covariance sum: 0.772
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.38, y: 22.3, z: -2.28, psi: -68.2 deg
+Current index: 447
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.787
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 448
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.78
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 449
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.384
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 450
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 451
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.179
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 452
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 453
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 454
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.328, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 455
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 456
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 457
+Predicted r: 7.82, Noise coeff: 7.616, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.359, y: 22.2, z: -2.23, psi: -69.9 deg
+Current index: 458
+Predicted r: 4.34, Noise coeff: 5.593, Covariance sum: 0.334
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.00381, y: 25.7, z: -2.63, psi: -92.7 deg
+Current index: 459
+Predicted r: 4.45, Noise coeff: 6.019, Covariance sum: 0.455
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.01, y: 25.8, z: -0.789, psi: -38.5 deg
+Current index: 460
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.439
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 461
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.443
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 462
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.443
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 463
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.279
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 464
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.159
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 465
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 466
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 467
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 468
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 469
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.89, psi: -75.4 deg
+Current index: 470
+Predicted r: 1.0, Noise coeff: 5.475, Covariance sum: 0.381
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.407, y: 29.2, z: -1.5, psi: -68.2 deg
+Current index: 471
+Predicted r: 1.88, Noise coeff: 5.969, Covariance sum: 0.735
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.135, y: 28.1, z: -1.94, psi: -92.3 deg
+Current index: 472
+Predicted r: 7.75, Noise coeff: 5.738, Covariance sum: 0.714
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.0782, y: 22.3, z: -1.08, psi: -92.6 deg
+Current index: 473
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.727
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.309, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 474
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.72
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 475
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.51
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 476
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.155
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 477
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 478
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.161
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 479
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 480
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 481
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 482
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 483
+Predicted r: 1.3, Noise coeff: 6.35, Covariance sum: 0.632
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 28.7, z: -1.95, psi: -82.8 deg
+Current index: 484
+Predicted r: 2.73, Noise coeff: 6.508, Covariance sum: 0.866
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.926, y: 27.8, z: -0.745, psi: -36.7 deg
+Current index: 485
+Predicted r: 7.7, Noise coeff: 7.17, Covariance sum: 0.848
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.38, y: 22.3, z: -2.28, psi: -68.2 deg
+Current index: 486
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.862
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 487
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.856
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 488
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.395
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 489
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.16
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 490
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 491
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 492
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 493
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 494
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 495
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 496
+Predicted r: 8.32, Noise coeff: 6.617, Covariance sum: 0.154
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.152, y: 21.7, z: -2.62, psi: -91.6 deg
+Current index: 497
+Predicted r: 0.919, Noise coeff: 6.406, Covariance sum: 0.259
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.398, y: 29.4, z: -1.43, psi: -96.5 deg
+Current index: 498
+Predicted r: 1.2, Noise coeff: 7.005, Covariance sum: 0.298
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.396, y: 29.4, z: -1.04, psi: -61.3 deg
+Current index: 499
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.283
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 500
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.283
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 501
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.298
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 502
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.193
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 503
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.152
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 504
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 505
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 506
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 507
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 508
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 509
+Predicted r: 7.67, Noise coeff: 6.119, Covariance sum: 0.159
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.852, y: 22.4, z: -1.99, psi: -86.8 deg
+Current index: 510
+Predicted r: 2.73, Noise coeff: 4.405, Covariance sum: 0.451
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.837, y: 27.8, z: -0.644, psi: -30.3 deg
+Current index: 511
+Predicted r: 8.8, Noise coeff: 6.422, Covariance sum: 0.434
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.96, y: 21.4, z: -2.29, psi: -93.5 deg
+Current index: 512
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.456
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 513
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.45
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 514
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.462
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 515
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 516
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.189
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.89, psi: -74.5 deg
+Current index: 517
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 518
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 519
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 520
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 521
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 522
+Predicted r: 8.66, Noise coeff: 5.539, Covariance sum: 0.196
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.59, y: 21.7, z: -2.01, psi: -39.6 deg
+Current index: 523
+Predicted r: 9.06, Noise coeff: 6.039, Covariance sum: 0.209
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.06, y: 21.0, z: -2.22, psi: -27.4 deg
+Current index: 524
+Predicted r: 7.73, Noise coeff: 4.499, Covariance sum: 0.243
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.45, y: 23.3, z: 1.5, psi: -62.6 deg
+Current index: 525
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.234
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 526
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.235
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 527
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.213
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.89, psi: -75.3 deg
+Current index: 528
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.201
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.88, psi: -75.5 deg
+Current index: 529
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.88, psi: -75.4 deg
+Current index: 530
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 531
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.89, psi: -75.2 deg
+Current index: 532
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 533
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 534
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.89, psi: -75.1 deg
+Current index: 535
+Predicted r: 5.76, Noise coeff: 4.931, Covariance sum: 0.204
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.163, y: 24.3, z: -2.52, psi: -1.04e+02 deg
+Current index: 536
+Predicted r: 9.64, Noise coeff: 6.457, Covariance sum: 0.242
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.39, y: 20.7, z: -1.89, psi: -44.7 deg
+Current index: 537
+Predicted r: 1.09, Noise coeff: 6.003, Covariance sum: 0.348
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.357, y: 29.5, z: -1.12, psi: -63.4 deg
+Current index: 538
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.333
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 539
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.342
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 540
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.309
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 541
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.27
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 542
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 543
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.287, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 544
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.89, psi: -74.4 deg
+Current index: 545
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 546
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 547
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.284, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 548
+Predicted r: 7.72, Noise coeff: 7.724, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.363, y: 22.3, z: -2.26, psi: -69.7 deg
+Current index: 549
+Predicted r: 7.7, Noise coeff: 6.677, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.38, y: 22.3, z: -2.28, psi: -68.2 deg
+Current index: 550
+Predicted r: 9.26, Noise coeff: 6.624, Covariance sum: 0.205
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.18, y: 21.0, z: -1.61, psi: -37.6 deg
+Current index: 551
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.19
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.89, psi: -74.5 deg
+Current index: 552
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.194
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 553
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.196
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 554
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.193
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.283, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 555
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 556
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.89, psi: -75.0 deg
+Current index: 557
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 558
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.89, psi: -74.5 deg
+Current index: 559
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 560
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.288, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 561
+Predicted r: 8.92, Noise coeff: 4.645, Covariance sum: 0.159
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.0806, y: 21.1, z: -2.58, psi: -90.8 deg
+Current index: 562
+Predicted r: 8.36, Noise coeff: 4.6, Covariance sum: 0.185
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.6, y: 22.1, z: -2.69, psi: -38.0 deg
+Current index: 563
+Predicted r: 5.65, Noise coeff: 6.226, Covariance sum: 0.273
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.906, y: 25.1, z: 0.701, psi: -54.1 deg
+Current index: 564
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.259
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.287, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 565
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.262
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.89, psi: -74.6 deg
+Current index: 566
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.278
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 567
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.252
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 568
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.283, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 569
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 570
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 571
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.286, y: 20.7, z: -1.89, psi: -74.9 deg
+Current index: 572
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -74.5 deg
+Current index: 573
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 574
+Predicted r: 5.48, Noise coeff: 4.84, Covariance sum: 0.213
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.338, y: 24.6, z: -2.93, psi: -69.6 deg
+Current index: 575
+Predicted r: 5.01, Noise coeff: 5.951, Covariance sum: 0.283
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.466, y: 25.1, z: -2.75, psi: -53.8 deg
+Current index: 576
+Predicted r: 8.78, Noise coeff: 7.664, Covariance sum: 0.262
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.159, y: 21.3, z: -2.87, psi: -1e+02 deg
+Current index: 577
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.275
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 578
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.271
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.285, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 579
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.232
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.288, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 580
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 581
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.183
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 582
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.286, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 583
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 584
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.88, psi: -74.8 deg
+Current index: 585
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.89, psi: -74.8 deg
+Current index: 586
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 587
+Predicted r: 8.41, Noise coeff: 5.961, Covariance sum: 0.208
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.88, y: 22.2, z: 0.596, psi: -54.1 deg
+Current index: 588
+Predicted r: 6.64, Noise coeff: 7.17, Covariance sum: 0.188
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.369, y: 23.4, z: -2.73, psi: -1.06e+02 deg
+Current index: 589
+Predicted r: 6.55, Noise coeff: 5.132, Covariance sum: 0.228
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.38, y: 23.6, z: -2.44, psi: -37.6 deg
+Current index: 590
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.22
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 591
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.22
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 592
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.186
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.287, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 593
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.207
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.88, psi: -74.4 deg
+Current index: 594
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 595
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 596
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.288, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 597
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.88, psi: -74.4 deg
+Current index: 598
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 599
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 600
+Predicted r: 1.42, Noise coeff: 5.882, Covariance sum: 0.493
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.55, y: 28.8, z: -1.4, psi: -46.3 deg
+Current index: 601
+Predicted r: 0.877, Noise coeff: 5.163, Covariance sum: 0.964
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.0254, y: 29.1, z: -1.98, psi: -95.7 deg
+Current index: 602
+Predicted r: 7.71, Noise coeff: 6.105, Covariance sum: 0.948
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.365, y: 22.3, z: -2.27, psi: -69.2 deg
+Current index: 603
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.957
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 604
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.951
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.89, psi: -74.5 deg
+Current index: 605
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.631
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 606
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.158
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.89, psi: -74.7 deg
+Current index: 607
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.89, psi: -74.3 deg
+Current index: 608
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 609
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -74.6 deg
+Current index: 610
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.285, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 611
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.88, psi: -74.5 deg
+Current index: 612
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 613
+Predicted r: 2.04, Noise coeff: 5.971, Covariance sum: 0.714
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.0881, y: 28.0, z: -2.05, psi: -91.2 deg
+Current index: 614
+Predicted r: 1.23, Noise coeff: 6.516, Covariance sum: 1.03
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.423, y: 29.3, z: -1.07, psi: -69.1 deg
+Current index: 615
+Predicted r: 8.23, Noise coeff: 4.443, Covariance sum: 1.01
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.446, y: 21.8, z: -2.07, psi: -78.5 deg
+Current index: 616
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 1.03
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.291, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 617
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 1.03
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.88, psi: -75.3 deg
+Current index: 618
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.485
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.88, psi: -75.2 deg
+Current index: 619
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 620
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.182
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 621
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.161
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -74.7 deg
+Current index: 622
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 623
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 624
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.88, psi: -75.1 deg
+Current index: 625
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 626
+Predicted r: 8.76, Noise coeff: 7.252, Covariance sum: 0.204
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.69, y: 21.6, z: -0.0128, psi: -46.9 deg
+Current index: 627
+Predicted r: 7.54, Noise coeff: 7.794, Covariance sum: 0.237
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.68, y: 23.3, z: 0.972, psi: -59.8 deg
+Current index: 628
+Predicted r: 7.73, Noise coeff: 7.517, Covariance sum: 0.226
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.354, y: 22.3, z: -2.26, psi: -69.9 deg
+Current index: 629
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.234
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.88, psi: -74.9 deg
+Current index: 630
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.232
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.88, psi: -75.0 deg
+Current index: 631
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.202
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 632
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 633
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.182
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 634
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 635
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 636
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 637
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 638
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 639
+Predicted r: 9.16, Noise coeff: 6.901, Covariance sum: 0.179
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.593, y: 20.9, z: -1.93, psi: -68.9 deg
+Current index: 640
+Predicted r: 9.27, Noise coeff: 6.459, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.14, y: 20.7, z: -1.98, psi: -76.0 deg
+Current index: 641
+Predicted r: 2.83, Noise coeff: 6.346, Covariance sum: 0.468
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.755, y: 27.8, z: -0.354, psi: -22.7 deg
+Current index: 642
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.452
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.87, psi: -75.4 deg
+Current index: 643
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.467
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 644
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.461
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 645
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.464
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 646
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 647
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.185
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.86, psi: -75.5 deg
+Current index: 648
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 649
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 650
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 651
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.29, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 652
+Predicted r: 7.72, Noise coeff: 6.549, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.355, y: 22.3, z: -2.26, psi: -69.9 deg
+Current index: 653
+Predicted r: 2.54, Noise coeff: 7.047, Covariance sum: 0.466
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.75, y: 28.1, z: -0.445, psi: -24.4 deg
+Current index: 654
+Predicted r: 1.23, Noise coeff: 4.954, Covariance sum: 0.842
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.457, y: 28.9, z: -1.76, psi: -80.5 deg
+Current index: 655
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.825
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 656
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.835
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.87, psi: -75.1 deg
+Current index: 657
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.833
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 658
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.537
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 659
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.159
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 660
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 661
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 662
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 663
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 664
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 665
+Predicted r: 1.12, Noise coeff: 6.052, Covariance sum: 0.479
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.433, y: 29.0, z: -1.63, psi: -92.4 deg
+Current index: 666
+Predicted r: 8.8, Noise coeff: 5.289, Covariance sum: 0.489
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.77, y: 21.7, z: -1.05, psi: -30.6 deg
+Current index: 667
+Predicted r: 1.65, Noise coeff: 5.422, Covariance sum: 0.605
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.484, y: 29.1, z: -0.712, psi: -39.5 deg
+Current index: 668
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.59
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 669
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.601
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 670
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.289
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 671
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.279
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 672
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 673
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 674
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 675
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 676
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.86, psi: -74.6 deg
+Current index: 677
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 678
+Predicted r: 6.95, Noise coeff: 7.478, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.698, y: 23.1, z: -1.97, psi: -94.4 deg
+Current index: 679
+Predicted r: 3.49, Noise coeff: 5.895, Covariance sum: 0.397
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.03, y: 27.0, z: -0.492, psi: -30.5 deg
+Current index: 680
+Predicted r: 6.5, Noise coeff: 6.521, Covariance sum: 0.372
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.297, y: 23.5, z: -2.68, psi: -1.01e+02 deg
+Current index: 681
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.402
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 682
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.395
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 683
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.402
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 684
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 685
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.195
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 686
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 687
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 688
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 689
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 690
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.86, psi: -74.7 deg
+Current index: 691
+Predicted r: 4.8, Noise coeff: 5.57, Covariance sum: 0.311
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.756, y: 25.9, z: 0.347, psi: -49.0 deg
+Current index: 692
+Predicted r: 5.02, Noise coeff: 7.385, Covariance sum: 0.352
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.551, y: 25.1, z: -3.07, psi: -58.1 deg
+Current index: 693
+Predicted r: 3.07, Noise coeff: 5.224, Covariance sum: 0.546
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.728, y: 27.7, z: -0.0731, psi: -21.0 deg
+Current index: 694
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.53
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.309, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 695
+Predicted r: 9.26, Noise coeff: 0.0, Covariance sum: 0.54
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.85, psi: -75.5 deg
+Current index: 696
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.399
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.85, psi: -75.5 deg
+Current index: 697
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.358
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 698
+Predicted r: 9.26, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 699
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 700
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 701
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 702
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.85, psi: -75.4 deg
+Current index: 703
+Predicted r: 9.27, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 704
+Predicted r: 8.86, Noise coeff: 7.171, Covariance sum: 0.202
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.77, y: 21.5, z: -0.105, psi: -47.2 deg
+Current index: 705
+Predicted r: 6.06, Noise coeff: 6.259, Covariance sum: 0.212
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.251, y: 24.0, z: -2.39, psi: -99.8 deg
+Current index: 706
+Predicted r: 8.83, Noise coeff: 6.193, Covariance sum: 0.211
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.23, y: 21.3, z: -2.51, psi: -95.7 deg
+Current index: 707
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.218
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 708
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.216
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 709
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.186
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 710
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 711
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.179
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 712
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 713
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.85, psi: -75.4 deg
+Current index: 714
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.86, psi: -75.5 deg
+Current index: 715
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 716
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.86, psi: -75.6 deg
+Current index: 717
+Predicted r: 6.76, Noise coeff: 4.827, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.0442, y: 23.2, z: -1.79, psi: -1.01e+02 deg
+Current index: 718
+Predicted r: 1.11, Noise coeff: 6.286, Covariance sum: 0.479
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.338, y: 29.0, z: -1.8, psi: -93.3 deg
+Current index: 719
+Predicted r: 0.994, Noise coeff: 6.547, Covariance sum: 0.648
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.388, y: 29.3, z: -1.47, psi: -78.3 deg
+Current index: 720
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.635
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 721
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.635
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 722
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.63
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 723
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.325
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 724
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.153
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 725
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 726
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 727
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 728
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 729
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 730
+Predicted r: 2.18, Noise coeff: 6.359, Covariance sum: 0.674
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.349, y: 27.9, z: -2.31, psi: -75.7 deg
+Current index: 731
+Predicted r: 7.84, Noise coeff: 7.169, Covariance sum: 0.651
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.347, y: 22.3, z: -3.19, psi: -1.04e+02 deg
+Current index: 732
+Predicted r: 6.17, Noise coeff: 4.887, Covariance sum: 0.663
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.127, y: 23.8, z: -2.38, psi: -92.7 deg
+Current index: 733
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.673
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 734
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.669
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 735
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 736
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.19
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.325, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 737
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 738
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.87, psi: -75.2 deg
+Current index: 739
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.87, psi: -74.9 deg
+Current index: 740
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 741
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 742
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.309, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 743
+Predicted r: 9.05, Noise coeff: 5.905, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.228, y: 21.0, z: -2.13, psi: -67.2 deg
+Current index: 744
+Predicted r: 9.01, Noise coeff: 5.289, Covariance sum: 0.208
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.07, y: 21.3, z: -0.631, psi: -37.9 deg
+Current index: 745
+Predicted r: 8.08, Noise coeff: 4.893, Covariance sum: 0.231
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.87, y: 22.7, z: 0.999, psi: -56.0 deg
+Current index: 746
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.221
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 747
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.223
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 748
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.223
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 749
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.191
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 750
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 751
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.85, psi: -75.4 deg
+Current index: 752
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 753
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 754
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 755
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 756
+Predicted r: 8.71, Noise coeff: 5.012, Covariance sum: 0.156
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 21.3, z: -2.85, psi: -99.7 deg
+Current index: 757
+Predicted r: 6.05, Noise coeff: 6.306, Covariance sum: 0.22
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.84, y: 24.3, z: -1.54, psi: -41.5 deg
+Current index: 758
+Predicted r: 8.17, Noise coeff: 6.963, Covariance sum: 0.243
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.66, y: 22.6, z: 1.04, psi: -56.2 deg
+Current index: 759
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.233
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.293, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 760
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.234
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.86, psi: -74.6 deg
+Current index: 761
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.254
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 762
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.19
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 763
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.292, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 764
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 765
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 766
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 767
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.86, psi: -74.6 deg
+Current index: 768
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 769
+Predicted r: 6.28, Noise coeff: 7.055, Covariance sum: 0.254
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.879, y: 24.8, z: 1.4, psi: -58.2 deg
+Current index: 770
+Predicted r: 2.02, Noise coeff: 6.339, Covariance sum: 0.749
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 28.0, z: -2.18, psi: -76.5 deg
+Current index: 771
+Predicted r: 8.79, Noise coeff: 4.521, Covariance sum: 0.741
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.53, y: 21.8, z: -0.286, psi: -39.0 deg
+Current index: 772
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.737
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 773
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.736
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 774
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.656
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.86, psi: -74.7 deg
+Current index: 775
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.16
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 776
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 777
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 778
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 779
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 780
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.298, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 781
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.86, psi: -74.7 deg
+Current index: 782
+Predicted r: 9.25, Noise coeff: 6.653, Covariance sum: 0.192
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.07, y: 21.0, z: -1.73, psi: -50.5 deg
+Current index: 783
+Predicted r: 7.71, Noise coeff: 5.855, Covariance sum: 0.18
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.354, y: 22.3, z: -2.26, psi: -69.4 deg
+Current index: 784
+Predicted r: 9.12, Noise coeff: 6.006, Covariance sum: 0.219
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.65, y: 21.3, z: -2.31, psi: -21.2 deg
+Current index: 785
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.205
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 786
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.209
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 787
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.191
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 788
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.204
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.85, psi: -74.6 deg
+Current index: 789
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 790
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.18
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 791
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 792
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.85, psi: -74.8 deg
+Current index: 793
+Predicted r: 9.28, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 794
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 795
+Predicted r: 1.18, Noise coeff: 6.295, Covariance sum: 0.479
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.5, y: 29.0, z: -1.56, psi: -71.9 deg
+Current index: 796
+Predicted r: 3.68, Noise coeff: 5.68, Covariance sum: 0.589
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.05, y: 26.8, z: -0.557, psi: -32.9 deg
+Current index: 797
+Predicted r: 7.1, Noise coeff: 6.238, Covariance sum: 0.592
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.96, y: 23.4, z: -0.345, psi: -46.5 deg
+Current index: 798
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.586
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 799
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.583
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.86, psi: -74.6 deg
+Current index: 800
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.278
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 801
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.299, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 802
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.85, psi: -74.4 deg
+Current index: 803
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.85, psi: -74.7 deg
+Current index: 804
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 805
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 806
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.86, psi: -74.6 deg
+Current index: 807
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 808
+Predicted r: 1.74, Noise coeff: 5.701, Covariance sum: 0.451
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.581, y: 28.9, z: -0.763, psi: -40.7 deg
+Current index: 809
+Predicted r: 6.1, Noise coeff: 7.288, Covariance sum: 0.444
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.06, y: 24.8, z: 0.981, psi: -59.5 deg
+Current index: 810
+Predicted r: 5.33, Noise coeff: 7.228, Covariance sum: 0.442
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.648, y: 24.8, z: -2.89, psi: -75.4 deg
+Current index: 811
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.457
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 812
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.453
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 813
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.85, psi: -74.7 deg
+Current index: 814
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.18
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 815
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.181
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 816
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.301, y: 20.7, z: -1.85, psi: -74.5 deg
+Current index: 817
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.85, psi: -74.6 deg
+Current index: 818
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.303, y: 20.7, z: -1.85, psi: -74.8 deg
+Current index: 819
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 820
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.85, psi: -74.7 deg
+Current index: 821
+Predicted r: 9.54, Noise coeff: 6.551, Covariance sum: 0.184
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.533, y: 20.5, z: -1.9, psi: -61.3 deg
+Current index: 822
+Predicted r: 7.26, Noise coeff: 5.93, Covariance sum: 0.182
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.713, y: 22.8, z: -2.6, psi: -61.9 deg
+Current index: 823
+Predicted r: 8.65, Noise coeff: 5.27, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.113, y: 21.4, z: -2.82, psi: -1.01e+02 deg
+Current index: 824
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 825
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 826
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.85, psi: -74.7 deg
+Current index: 827
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 828
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.187
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 829
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.85, psi: -74.5 deg
+Current index: 830
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.85, psi: -74.6 deg
+Current index: 831
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.85, psi: -74.8 deg
+Current index: 832
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.289, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 833
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.85, psi: -74.7 deg
+Current index: 834
+Predicted r: 8.99, Noise coeff: 6.804, Covariance sum: 0.207
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.93, y: 21.3, z: -0.476, psi: -41.5 deg
+Current index: 835
+Predicted r: 9.14, Noise coeff: 7.253, Covariance sum: 0.22
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.04, y: 21.1, z: -0.952, psi: -37.0 deg
+Current index: 836
+Predicted r: 2.34, Noise coeff: 6.352, Covariance sum: 0.535
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.599, y: 28.5, z: -0.319, psi: -16.4 deg
+Current index: 837
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.52
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.304, y: 20.7, z: -1.86, psi: -74.7 deg
+Current index: 838
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.537
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.3, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 839
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.503
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.288, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 840
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.489
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.295, y: 20.7, z: -1.86, psi: -74.6 deg
+Current index: 841
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.296, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 842
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.188
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.294, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 843
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.297, y: 20.7, z: -1.85, psi: -74.5 deg
+Current index: 844
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 845
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 846
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 847
+Predicted r: 9.45, Noise coeff: 5.059, Covariance sum: 0.231
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.16, y: 20.8, z: -2.1, psi: 14.5 deg
+Current index: 848
+Predicted r: 1.41, Noise coeff: 6.788, Covariance sum: 0.694
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.589, y: 28.8, z: -1.58, psi: -56.5 deg
+Current index: 849
+Predicted r: 7.22, Noise coeff: 5.422, Covariance sum: 0.67
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.0707, y: 22.8, z: -2.46, psi: -1.01e+02 deg
+Current index: 850
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.706
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 851
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.697
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 852
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.642
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 853
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.177
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 854
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.201
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 855
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.164
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 856
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.86, psi: -75.6 deg
+Current index: 857
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 858
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 859
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.85, psi: -75.6 deg
+Current index: 860
+Predicted r: 7.28, Noise coeff: 6.269, Covariance sum: 0.16
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.578, y: 22.7, z: -2.11, psi: -97.3 deg
+Current index: 861
+Predicted r: 1.49, Noise coeff: 6.596, Covariance sum: 0.609
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.276, y: 28.5, z: -2.18, psi: -62.3 deg
+Current index: 862
+Predicted r: 7.12, Noise coeff: 6.133, Covariance sum: 0.593
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.61, y: 23.3, z: -0.224, psi: -56.5 deg
+Current index: 863
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.599
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.85, psi: -75.4 deg
+Current index: 864
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.596
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 865
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.608
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.321, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 866
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.159
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.84, psi: -75.3 deg
+Current index: 867
+Predicted r: 9.33, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 868
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 869
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.84, psi: -75.4 deg
+Current index: 870
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.85, psi: -75.4 deg
+Current index: 871
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 872
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 873
+Predicted r: 3.87, Noise coeff: 6.089, Covariance sum: 0.413
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.589, y: 26.2, z: -1.99, psi: -99.7 deg
+Current index: 874
+Predicted r: 3.61, Noise coeff: 6.862, Covariance sum: 0.639
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.0139, y: 26.5, z: -2.74, psi: -67.3 deg
+Current index: 875
+Predicted r: 8.47, Noise coeff: 6.337, Covariance sum: 0.623
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.488, y: 21.5, z: -2.36, psi: -62.1 deg
+Current index: 876
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.629
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.85, psi: -75.4 deg
+Current index: 877
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.625
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 878
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.385
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 879
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.159
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 880
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 881
+Predicted r: 9.33, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.309, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 882
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 883
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 884
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.31, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 885
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 886
+Predicted r: 1.88, Noise coeff: 5.071, Covariance sum: 0.475
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.638, y: 28.8, z: -0.727, psi: -40.4 deg
+Current index: 887
+Predicted r: 7.8, Noise coeff: 4.277, Covariance sum: 0.452
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.181, y: 22.3, z: -3.03, psi: -1.04e+02 deg
+Current index: 888
+Predicted r: 8.9, Noise coeff: 6.259, Covariance sum: 0.505
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.83, y: 21.1, z: -2.18, psi: -38.8 deg
+Current index: 889
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.49
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 890
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.493
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 891
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.19
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 892
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.213
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 893
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.16
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 894
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.85, psi: -75.5 deg
+Current index: 895
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.85, psi: -75.4 deg
+Current index: 896
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.6 deg
+Current index: 897
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.86, psi: -75.6 deg
+Current index: 898
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.86, psi: -75.5 deg
+Current index: 899
+Predicted r: 8.17, Noise coeff: 5.281, Covariance sum: 0.202
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.94, y: 22.4, z: -2.1, psi: -32.1 deg
+Current index: 900
+Predicted r: 8.8, Noise coeff: 6.149, Covariance sum: 0.223
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -2.76, y: 21.8, z: -0.501, psi: -36.3 deg
+Current index: 901
+Predicted r: 1.61, Noise coeff: 6.36, Covariance sum: 0.774
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.247, y: 28.4, z: -2.26, psi: -63.7 deg
+Current index: 902
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.758
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 903
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.773
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 904
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.741
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 905
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.72
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 906
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 907
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.184
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 908
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 909
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 910
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 911
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 912
+Predicted r: 8.78, Noise coeff: 6.885, Covariance sum: 0.185
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.37, y: 21.3, z: -2.17, psi: -50.9 deg
+Current index: 913
+Predicted r: 2.49, Noise coeff: 6.196, Covariance sum: 0.619
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.574, y: 27.6, z: -2.01, psi: -64.7 deg
+Current index: 914
+Predicted r: 8.3, Noise coeff: 6.336, Covariance sum: 0.603
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.612, y: 21.7, z: -2.09, psi: -58.3 deg
+Current index: 915
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.618
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.85, psi: -75.4 deg
+Current index: 916
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.614
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.85, psi: -75.3 deg
+Current index: 917
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.603
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 918
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.85, psi: -75.2 deg
+Current index: 919
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.184
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.309, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 920
+Predicted r: 9.29, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 921
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 922
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 923
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 924
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 925
+Predicted r: 7.15, Noise coeff: 5.599, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.143, y: 22.9, z: -2.1, psi: -1.06e+02 deg
+Current index: 926
+Predicted r: 4.77, Noise coeff: 5.215, Covariance sum: 0.282
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.233, y: 25.2, z: -1.69, psi: -1.04e+02 deg
+Current index: 927
+Predicted r: 2.72, Noise coeff: 6.051, Covariance sum: 0.501
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.573, y: 27.9, z: -0.418, psi: -23.4 deg
+Current index: 928
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.485
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 929
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.497
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.85, psi: -75.1 deg
+Current index: 930
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.505
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.302, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 931
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.384
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 932
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 933
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.18
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 934
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.86, psi: -74.6 deg
+Current index: 935
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.85, psi: -74.8 deg
+Current index: 936
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 937
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.173
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.305, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 938
+Predicted r: 9.13, Noise coeff: 6.199, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.0891, y: 20.9, z: -1.97, psi: -67.6 deg
+Current index: 939
+Predicted r: 1.11, Noise coeff: 7.337, Covariance sum: 0.496
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.544, y: 29.1, z: -1.66, psi: -1.03e+02 deg
+Current index: 940
+Predicted r: 2.22, Noise coeff: 5.768, Covariance sum: 0.807
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.659, y: 27.9, z: -1.84, psi: -61.5 deg
+Current index: 941
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.791
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 942
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.797
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 943
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.79
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 944
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.469
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.85, psi: -75.0 deg
+Current index: 945
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.157
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 946
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 947
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.311, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 948
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.86, psi: -74.7 deg
+Current index: 949
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.318, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 950
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.172
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.85, psi: -74.9 deg
+Current index: 951
+Predicted r: 1.21, Noise coeff: 6.47, Covariance sum: 0.56
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.459, y: 28.9, z: -1.83, psi: -89.4 deg
+Current index: 952
+Predicted r: 2.71, Noise coeff: 6.818, Covariance sum: 0.897
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.444, y: 27.4, z: -2.42, psi: -69.1 deg
+Current index: 953
+Predicted r: 1.34, Noise coeff: 4.796, Covariance sum: 1.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.443, y: 28.7, z: -1.88, psi: -78.6 deg
+Current index: 954
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 1.15
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.307, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 955
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 1.16
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.86, psi: -74.7 deg
+Current index: 956
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.764
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 957
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.426
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 958
+Predicted r: 9.33, Noise coeff: 0.0, Covariance sum: 0.151
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 959
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -74.7 deg
+Current index: 960
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.162
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 961
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.166
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 962
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.316, y: 20.7, z: -1.86, psi: -74.6 deg
+Current index: 963
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.17
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 964
+Predicted r: 6.98, Noise coeff: 5.668, Covariance sum: 0.163
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 0.0608, y: 23.0, z: -1.92, psi: -1.09e+02 deg
+Current index: 965
+Predicted r: 7.7, Noise coeff: 5.473, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.38, y: 22.3, z: -2.28, psi: -68.2 deg
+Current index: 966
+Predicted r: 7.7, Noise coeff: 5.204, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.38, y: 22.3, z: -2.28, psi: -68.2 deg
+Current index: 967
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.179
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 968
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.178
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 969
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.187
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.313, y: 20.7, z: -1.86, psi: -74.7 deg
+Current index: 970
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.86, psi: -74.9 deg
+Current index: 971
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.179
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.315, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 972
+Predicted r: 9.33, Noise coeff: 0.0, Covariance sum: 0.174
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.308, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 973
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.175
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.86, psi: -74.8 deg
+Current index: 974
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.312, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 975
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.306, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 976
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.176
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.87, psi: -74.8 deg
+Current index: 977
+Predicted r: 9.19, Noise coeff: 6.216, Covariance sum: 0.207
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -1.17, y: 20.9, z: -2.05, psi: -19.9 deg
+Current index: 978
+Predicted r: 1.04, Noise coeff: 7.17, Covariance sum: 0.393
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.332, y: 29.5, z: -1.16, psi: -57.0 deg
+Current index: 979
+Predicted r: 1.46, Noise coeff: 6.572, Covariance sum: 0.68
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.521, y: 28.6, z: -1.87, psi: -77.0 deg
+Current index: 980
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.667
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 981
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.669
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 982
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.634
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 983
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.446
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 984
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.158
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 985
+Predicted r: 9.33, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.32, y: 20.7, z: -1.86, psi: -75.4 deg
+Current index: 986
+Predicted r: 9.33, Noise coeff: 0.0, Covariance sum: 0.165
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 987
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 988
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.169
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.324, y: 20.7, z: -1.86, psi: -75.2 deg
+Current index: 989
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.171
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.317, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 990
+Predicted r: 5.21, Noise coeff: 5.594, Covariance sum: 0.285
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.726, y: 25.5, z: 0.571, psi: -52.5 deg
+Current index: 991
+Predicted r: 1.97, Noise coeff: 6.241, Covariance sum: 0.546
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.488, y: 28.7, z: -0.574, psi: -27.2 deg
+Current index: 992
+Predicted r: 4.95, Noise coeff: 5.093, Covariance sum: 0.565
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.756, y: 25.8, z: 0.509, psi: -51.2 deg
+Current index: 993
+Predicted r: 9.33, Noise coeff: 0.0, Covariance sum: 0.564
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 994
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.563
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.326, y: 20.7, z: -1.86, psi: -75.1 deg
+Current index: 995
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.447
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 996
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.186
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.314, y: 20.7, z: -1.86, psi: -75.3 deg
+Current index: 997
+Predicted r: 9.3, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.323, y: 20.7, z: -1.87, psi: -75.0 deg
+Current index: 998
+Predicted r: 9.31, Noise coeff: 0.0, Covariance sum: 0.167
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.322, y: 20.7, z: -1.86, psi: -75.0 deg
+Current index: 999
+Predicted r: 9.32, Noise coeff: 0.0, Covariance sum: 0.168
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: -0.319, y: 20.7, z: -1.86, psi: -75.3 deg
