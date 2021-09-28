@@ -42,6 +42,27 @@ from trajectory import Trajectory
 from network import Net, Net_Regressor
 from sympy import Point3D, Line3D
 
+
+
+
+##Rangeler eksikti ekledim -ahmet
+GATE_YAW_RANGE = [-np.pi, np.pi]  # world theta gate
+# GATE_YAW_RANGE = [-1, 1]  # world theta gate -- this range is btw -pi and +pi
+UAV_X_RANGE = [-30, 30] # world x quad
+UAV_Y_RANGE = [-30, 30] # world y quad
+UAV_Z_RANGE = [-2, -3] # world z quad
+
+UAV_YAW_RANGE = [-np.pi, np.pi]  #[-eps, eps] [-np.pi/4, np.pi/4]
+eps = np.pi/10.0  # 18 degrees
+UAV_PITCH_RANGE = [-eps, eps]  #[-np.pi/4, np.pi/4]
+UAV_ROLL_RANGE = [-eps, eps]  #[-np.pi/4, np.pi/4]
+
+R_RANGE = [0.1, 20]  # in meters
+correction = 0.85
+CAM_FOV = 90.0*correction  # in degrees -- needs to be a bit smaller than 90 in fact because of cone vs. square
+
+
+
 # MP_list = ["min_vel", "min_acc", "min_jerk", "min_snap", "min_acc_stop", "min_jerk_stop", "min_snap_stop", 
 #            "min_jerk_full_stop", "min_snap_full_stop", "pos_waypoint_arrived","pos_waypoint_timed", "pos_waypoint_interp"] 
 
@@ -209,9 +230,7 @@ class PoseSampler:
         #              #Pose(Vector3r(9.,-20.,-4.), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))]
 
         # Previous gates
-        self.gate = [Pose(Vector3r(0.,20.,-2.), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-                     Pose(Vector3r(4.,10.,-1), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
-                     Pose(Vector3r(10.,0.,-1.5), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3]))]
+        self.gate = [Pose(Vector3r(0.,20.,-2.), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3]))]
 
         self.drone_init_2 = Pose(Vector3r(0.,0.,-2), Quaternionr(0., 0., -0.70710678, 0.70710678))
         self.gate_2 = [Pose(Vector3r(0.,-5.,-2.), Quaternionr(0., 0., 0., 1.)),
@@ -569,6 +588,7 @@ class PoseSampler:
             img1d = np.fromstring(image_response.image_data_uint8, dtype=np.uint8)  # get numpy array
             img_rgb = img1d.reshape(image_response.height, image_response.width, 3)  # reshape array to 4 channel image array H X W X 3
             img_rgb = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2RGB)
+            #cv2.imwrite("test.png",img_rgb)
             # anyGate = self.isThereAnyGate(img_rgb)
             #cv2.imwrite(os.path.join(self.base_path, 'images', "frame" + str(self.curr_idx).zfill(len(str(self.num_samples))) + '.png'), img_rgb)
             img =  Image.fromarray(img_rgb)
@@ -659,7 +679,16 @@ class PoseSampler:
         b: UAV body frame
         g: gate frame
         '''
-
+        p_o_b, phi_base = racing_utils.geom_utils.randomQuadPose(UAV_X_RANGE, UAV_Y_RANGE, UAV_Z_RANGE, UAV_YAW_RANGE, UAV_PITCH_RANGE, UAV_ROLL_RANGE)
+        self.client.simSetVehiclePose(p_o_b, True)
+        # create and set gate pose relative to the quad
+        p_o_g, r, theta, psi, phi_rel = racing_utils.geom_utils.randomGatePose(p_o_b, phi_base, R_RANGE, CAM_FOV, correction)
+        # self.client.simSetObjectPose(self.tgt_name, p_o_g_new, True)
+        if self.with_gate:
+            self.client.simSetObjectPose(self.tgt_name, p_o_g, True)
+        
+        # self.client.plot_tf([p_o_g], duration=20.0)
+        # request quad img from AirSim
         # create and set pose for the quad
         #p_o_b, phi_base = racing_utils.geom_utils.randomQuadPose(UAV_X_RANGE, UAV_Y_RANGE, UAV_Z_RANGE, UAV_YAW_RANGE, UAV_PITCH_RANGE, UAV_ROLL_RANGE)
         
@@ -669,7 +698,7 @@ class PoseSampler:
         #min_vel, min_acc, min_jerk, pos_waypoint_interp, min_acc_stop, min_jerk_full_stop
         MP_list = ["min_acc", "min_jerk", "min_jerk_full_stop", "min_vel"]
         #MP_list = ["min_vel"]
-
+        
         if self.with_gate:
             # gate_name = "gate_0"
             # self.tgt_name = self.client.simSpawnObject(gate_name, "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), 0.75)

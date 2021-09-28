@@ -2,7 +2,7 @@ import os
 import h5py
 import numpy as np
 import matplotlib.pyplot as plt
-import tensorflow as tf
+#import tensorflow as tf
 import random
 import os
 import matplotlib.pyplot as plt
@@ -141,7 +141,7 @@ def read_images(data_dir, res, max_size=None):
     print('Done reading {} images.'.format(images_np.shape[0]))
     return images_np
 
-def create_dataset_csv(data_dir, batch_size, res, max_size=None):
+"""def create_dataset_csv(data_dir, batch_size, res, max_size=None):
     print('Going to read file list')
     files_list = glob.glob(os.path.join(data_dir, 'images/*.png'))
     print('Done. Starting sorting.')
@@ -195,9 +195,9 @@ def create_dataset_csv(data_dir, batch_size, res, max_size=None):
     ds_train = tf.data.Dataset.from_tensor_slices((img_train, dist_train)).batch(batch_size)
     ds_test = tf.data.Dataset.from_tensor_slices((img_test, dist_test)).batch(batch_size)
 
-    return ds_train, ds_test
+    return ds_train, ds_test"""
 
-def create_unsup_dataset_multiple_sources(data_dir_list, batch_size, res):
+"""def create_unsup_dataset_multiple_sources(data_dir_list, batch_size, res):
     # load all the images in one single large dataset
     images_np = np.empty((0,res,res,3)).astype(np.float32)
     for data_dir in data_dir_list:
@@ -212,7 +212,7 @@ def create_unsup_dataset_multiple_sources(data_dir_list, batch_size, res):
     # convert to tf format dataset and prepare batches
     ds_train = tf.data.Dataset.from_tensor_slices((img_train, dist_train)).batch(batch_size)
     ds_test = tf.data.Dataset.from_tensor_slices((img_test, dist_test)).batch(batch_size)
-    return ds_train, ds_test
+    return ds_train, ds_test"""
 
 def create_test_dataset_csv(data_dir, res, read_table=True):
     # prepare image dataset from a folder
@@ -252,7 +252,7 @@ def create_test_dataset_csv(data_dir, res, read_table=True):
 
     return images_np, raw_table
 
-def create_dataset_txt(data_dir, batch_size, res, data_mode='train', base_path=None):
+"""def create_dataset_txt(data_dir, batch_size, res, data_mode='train', base_path=None):
     vel_table = np.loadtxt(data_dir + '/proc_vel.txt', delimiter=',').astype(np.float32)
     with open(data_dir + '/proc_images.txt') as f:
         img_table = f.read().splitlines()
@@ -300,9 +300,9 @@ def create_dataset_txt(data_dir, batch_size, res, data_mode='train', base_path=N
         ds_test = tf.data.Dataset.from_tensor_slices((img_test, v_test)).batch(batch_size)
         return ds_train, ds_test
     elif data_mode == 'test':
-        return img_test, v_test
+        return img_test, v_test"""
 
-def create_dataset_multiple_sources(data_dir_list, batch_size, res, data_mode='train', base_path=None):
+"""def create_dataset_multiple_sources(data_dir_list, batch_size, res, data_mode='train', base_path=None):
     # load all the images and velocities in one single large dataset
     images_np = np.empty((0,res,res,3)).astype(np.float32)
     vel_table = np.empty((0,4)).astype(np.float32)
@@ -318,4 +318,4 @@ def create_dataset_multiple_sources(data_dir_list, batch_size, res, data_mode='t
         ds_test = tf.data.Dataset.from_tensor_slices((img_test, v_test)).batch(batch_size)
         return ds_train, ds_test
     elif data_mode == 'test':
-        return img_test, v_test
+        return img_test, v_test"""
