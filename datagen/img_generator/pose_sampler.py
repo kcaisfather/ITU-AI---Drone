@@ -3,7 +3,7 @@ import numpy as np
 import os
 import sys
 from os.path import isfile, join
-
+# za
 import airsimdroneracingvae as airsim
 # print(os.path.abspath(airsim.__file__))
 from airsimdroneracingvae.types import Pose, Vector3r, Quaternionr
