@@ -1,7 +1,7 @@
 from pose_sampler import *
 import os
 
-base_path = '/root'
+base_path = '/home/vival/Documents/DeepDroneAi/gitDrone/ITU-AI---Drone'
 num_iterations = 100
 mode = "TEST"
 flight_log = True
@@ -17,18 +17,18 @@ def summarize_results(list_all = True):
 
 	if list_all:
 		for i in range(len(time_list)):
-			print "\nThere are {0} successful flights are in test_variables_{1}.pkl file".format(method_counter[i], i)
+			print("\nThere are {0} successful flights are in test_variables_{1}.pkl file".format(method_counter[i], i))
 			for element in time_list[i]:
 				method, arrival_time = element
-				print"Method: {0}, Time of arrival: {1:.5}".format(method,arrival_time)
+				print("Method: {0}, Time of arrival: {1:.5}".format(method,arrival_time))
 
 	else:
 		ind = np.argmax(np.array(method_counter))
-		print"\nThere are {0} successful flights are in test_variables_{1}.pkl file".format(np.max(np.array(method_counter)), ind)
+		print("\nThere are {0} successful flights are in test_variables_{1}.pkl file".format(np.max(np.array(method_counter)), ind))
 
 		for element in time_list[ind]:
 			method, arrival_time = element
-			print"Method: {0}, Time of arrival: {1:.5}".format(method,arrival_time)
+			print("Method: {0}, Time of arrival: {1:.5}".format(method,arrival_time))
 
 
 def main():
@@ -42,13 +42,13 @@ def main():
 	if mode == "DATA_COLLECTION":
 		pose_sampler = PoseSampler(base_path, flight_log)
 		for i in range(num_iterations):
-			print"PHASE: " + mode + " Iteration: {0}/{1}".format(i+1, num_iterations)
+			print("PHASE: " + mode + " Iteration: {0}/{1}".format(i+1, num_iterations))
 			pose_sampler.update(mode)
 	elif mode == "SUMMARY":
 		summarize_results()
 	else:
 		pose_sampler = PoseSampler(base_path, flight_log)
-		print"PHASE: " + mode
+		print("PHASE: " + mode)
 		pose_sampler.update(mode)
 
 

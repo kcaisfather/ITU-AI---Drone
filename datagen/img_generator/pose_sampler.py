@@ -3,7 +3,7 @@ import numpy as np
 import os
 import sys
 from os.path import isfile, join
-
+# hahahaha
 import airsimdroneracingvae as airsim
 # print(os.path.abspath(airsim.__file__))
 from airsimdroneracingvae.types import Pose, Vector3r, Quaternionr
@@ -31,7 +31,8 @@ import lstmf
 import pickle
 import random
 from numpy import zeros
-from sklearn.externals.joblib import dump, load
+from joblib import dump, load
+
 from sklearn.preprocessing import StandardScaler
 from quadrotor import *
 from mytraj import MyTraj
@@ -396,8 +397,8 @@ class PoseSampler:
                             distance = np.linalg.norm(np.cross(distance_from_center, u_v)) / np.linalg.norm(u_v)
                             #print "Edge: {0}, (Numeric) Distance from the center: {1:.3}".format(i, distance) 
                             if distance < max_distance:
-                                print "Collision detected!"
-                                print "Index: {0}, Drone corner x={1:.3}, y={2:.3}, z={3:.3}".format(i, drone_edge_point[0], drone_edge_point[1], drone_edge_point[2])
+                                print("Collision detected!")
+                                print("Index: {0}, Drone corner x={1:.3}, y={2:.3}, z={3:.3}".format(i, drone_edge_point[0], drone_edge_point[1], drone_edge_point[2]))
 
                                 return True
             
@@ -427,7 +428,7 @@ class PoseSampler:
         phi = np.random.uniform(-np.pi/6, np.pi/6)
         theta =  np.random.uniform(-np.pi/6, np.pi/6)
         psi = np.random.uniform(-np.pi/6, np.pi/6)
-        print "\nCenter Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(self.track[gate_index].position.x_val, self.track[gate_index].position.y_val, self.track[gate_index].position.z_val)
+        print("\nCenter Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(self.track[gate_index].position.x_val, self.track[gate_index].position.y_val, self.track[gate_index].position.z_val))
         quad_pose = [self.track[gate_index].position.x_val, self.track[gate_index].position.y_val, self.track[gate_index].position.z_val, -phi, -theta, psi]
         self.quad.state = [quad_pose[0], quad_pose[1], quad_pose[2], phi, theta, psi, 0., 0., 0., 0., 0., 0.]
         self.client.simSetVehiclePose(QuadPose(quad_pose), True)
@@ -447,7 +448,7 @@ class PoseSampler:
             gate_edge_range = np.array([x_rng/1.5, 0., 0.25*np.random.uniform(-1,1)])
             gate_edge_world = np.dot(rot_matrix, gate_edge_range.reshape(-1,1)).ravel()
             gate_edge_point = np.array([gate_pos[0]+gate_edge_world[0], gate_pos[1]+gate_edge_world[1], gate_pos[2]+gate_edge_world[2]])
-            print "\nEdge Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(gate_edge_point[0], gate_edge_point[1], gate_edge_point[2])
+            print("\nEdge Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(gate_edge_point[0], gate_edge_point[1], gate_edge_point[2]))
             self.quad.state = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], phi, theta, psi, 0., 0., 0., 0., 0., 0.]
             quad_pose = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], -phi, -theta, psi]
             self.client.simSetVehiclePose(QuadPose(quad_pose), True)
@@ -460,7 +461,7 @@ class PoseSampler:
             gate_edge_world = np.dot(rot_matrix, gate_edge_range.reshape(-1,1)).ravel()
             gate_edge_point = np.array([gate_pos[0]+gate_edge_world[0], gate_pos[1]+gate_edge_world[1], gate_pos[2]+gate_edge_world[2]])
             edge_ind += 1
-            print "\nEdge Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(gate_edge_point[0], gate_edge_point[1], gate_edge_point[2])
+            print("\nEdge Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(gate_edge_point[0], gate_edge_point[1], gate_edge_point[2]))
             self.quad.state = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], phi, theta, psi, 0., 0., 0., 0., 0., 0.]
             quad_pose = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], -phi, -theta, psi]
             self.client.simSetVehiclePose(QuadPose(quad_pose), True)
@@ -627,8 +628,8 @@ class PoseSampler:
                     #yawf = Rotation.from_quat([self.track[self.current_gate].orientation.x_val, self.track[self.current_gate].orientation.y_val, 
                     #                   self.track[self.current_gate].orientation.z_val, self.track[self.current_gate].orientation.w_val]).as_euler('ZYX',degrees=False)[0] - np.pi/2
                     
-                    print "\nCurrent index: {0}".format(self.curr_idx)
-                    print "Predicted r: {0:.3}, Noise coeff: {1:.4}, Covariance sum: {2:.3}".format(pose_gate_body[0][0], sign_coeff*noise_coeff, covariance_sum)
+                    print("\nCurrent index: {0}".format(self.curr_idx))
+                    print("Predicted r: {0:.3}, Noise coeff: {1:.4}, Covariance sum: {2:.3}".format(pose_gate_body[0][0], sign_coeff*noise_coeff, covariance_sum))
                     #print "Brightness: {0:.3}, Contast: {1:.3}, Saturation: {2:.3}".format(self.brightness, self.contrast, self.saturation)
                     if self.flight_log:
                         f.write("\nCurrent index: {0}".format(self.curr_idx))
@@ -691,16 +692,16 @@ class PoseSampler:
 
         if mode == "TEST":    
             self.mp_classifier.load_state_dict(torch.load(self.base_path + '/classifier_files/best_2.pt'))
-            self.time_regressor = load(self.base_path + '/classifier_files/dt_regressor.sav')
+            #self.time_regressor = load(self.base_path + '/classifier_files/dt_regressor.sav')
             self.time_coeff = 1.5
             v_average = 1.5 
             #self.mp_scaler = load(self.base_path + 'classifier_files/mp_scaler.bin')
             #self.time_scaler = load(self.base_path + 'classifier_files/time_scaler.bin')
-            print "\n>>> PREDICTION MODE: DICE, SAFE MODE: ON"
+            print("\n>>> PREDICTION MODE: DICE, SAFE MODE: ON")
             self.test_algorithm(use_model=True, method="DICE_SAFE", safe_mode = True, time_or_speed = 0, v_average = v_average)
             
             for method in MP_list:
-                print "\n>>> TEST MODE: " + method
+                print("\n>>> TEST MODE: " + method)
                 self.test_algorithm(method = method, time_or_speed = 0, v_average = v_average)
 
             self.test_number = "0_0"
@@ -710,7 +711,7 @@ class PoseSampler:
         elif mode == "VISUAL":
             self.visualize_drone()
         else:
-            print "There is no such a mode called " + "'" + mode + "'"
+            print("There is no such a mode called " + "'" + mode + "'")
 
 
 
@@ -724,10 +725,10 @@ class PoseSampler:
 
         # if not os.path.exists(test_file):
         #     break
-        print "\nCurrent file: test_variables_{0}.pkl".format(self.test_number)
+        print("\nCurrent file: test_variables_{0}.pkl".format(self.test_number))
         test_states, test_arrival_time, test_costs, test_safe_counter, test_distribution_on_noise, test_distribution_off_noise, test_covariances, test_methods = pickle.load(open(test_file, "rb"))
         for mode in self.test_modes:
-            print "\nDrone flies using the algorithm, ", mode
+            print("\nDrone flies using the algorithm, ", mode)
             self.client.simSetVehiclePose(self.drone_init, True)
             state_list = test_states[mode]
             for state in state_list:
@@ -736,25 +737,25 @@ class PoseSampler:
                 time.sleep(0.001)
                 
             if test_costs[mode] == 1e12:
-                print "Drone has failed to complete the path!"
+                print("Drone has failed to complete the path!")
             else:
-                print "Drone has completed the path successfully!"
+                print("Drone has completed the path successfully!")
                 cost_dict[mode] = test_costs[mode]
                 time_dict[mode] = test_arrival_time[mode]
-            print "Time of arrival is {0:.6} s.".format(test_arrival_time[mode])
-            print "Total cost is {0:.6}".format(test_costs[mode])
-            print "Drone has been in safe mode: {0} times".format(test_safe_counter[mode])
+            print("Time of arrival is {0:.6} s.".format(test_arrival_time[mode]))
+            print("Total cost is {0:.6}".format(test_costs[mode]))
+            print("Drone has been in safe mode: {0} times".format(test_safe_counter[mode]))
 
             if mode == "DICE_SAFE" or mode == "DICE_NO_SAFE" or mode == "MAX_SAFE" or mode == "MAX_NO_SAFE":
                 sum_val = float(np.sum(test_distribution_on_noise[mode].values()))
                 for sub_mode in test_distribution_on_noise[mode]:
                     current_val = test_distribution_on_noise[mode][sub_mode]
-                    print "In noisy conditions, drone has been in mode, {0} {1} times, {2:.4}%".format(sub_mode, current_val, current_val/sum_val*100.)
+                    print("In noisy conditions, drone has been in mode, {0} {1} times, {2:.4}%".format(sub_mode, current_val, current_val/sum_val*100.))
 
                 sum_val = float(np.sum(test_distribution_off_noise[mode].values()))
                 for sub_mode in test_distribution_off_noise[mode]:
                     current_val = test_distribution_off_noise[mode][sub_mode]
-                    print "In non noisy conditions, drone has been in mode, {0} {1} times, {2:.4}%".format(sub_mode, current_val, current_val/sum_val*100.)
+                    print("In non noisy conditions, drone has been in mode, {0} {1} times, {2:.4}%".format(sub_mode, current_val, current_val/sum_val*100.))
 
         cost_list.append(cost_dict)
         time_list.append(time_dict)
