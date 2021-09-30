@@ -1,7 +1,7 @@
 from pose_sampler import *
 import os
 
-base_path = '/home/vival/Documents/DeepDroneAi/gitDrone/ITU-AI---Drone'
+base_path = '/home/recep/ITU-AI---Drone'
 num_iterations = 100
 mode = "TEST"
 flight_log = True
@@ -33,6 +33,8 @@ def summarize_results(list_all = True):
 
 def main():
 	
+	parcour = input("Choose parcour (p1,p2,p3): ")
+
 	# check if output folder exists
 	if not os.path.isdir(base_path):
 	    os.makedirs(base_path)
@@ -40,14 +42,14 @@ def main():
 	    os.makedirs(img_dir)
 
 	if mode == "DATA_COLLECTION":
-		pose_sampler = PoseSampler(base_path, flight_log)
+		pose_sampler = PoseSampler(base_path, flight_log, parcour)
 		for i in range(num_iterations):
 			print("PHASE: " + mode + " Iteration: {0}/{1}".format(i+1, num_iterations))
 			pose_sampler.update(mode)
 	elif mode == "SUMMARY":
 		summarize_results()
 	else:
-		pose_sampler = PoseSampler(base_path, flight_log)
+		pose_sampler = PoseSampler(base_path, flight_log, parcour)
 		print("PHASE: " + mode)
 		pose_sampler.update(mode)
 
