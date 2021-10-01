@@ -9,6 +9,7 @@ import airsimdroneracingvae as airsim
 from airsimdroneracingvae.types import Pose, Vector3r, Quaternionr
 import airsimdroneracingvae.types
 import airsimdroneracingvae.utils
+from scipy.integrate._ivp.radau import P
 from scipy.spatial.transform import Rotation
 import time
 
@@ -41,6 +42,7 @@ from geom_utils import QuadPose
 from trajectory import Trajectory
 from network import Net, Net_Regressor
 from sympy import Point3D, Line3D
+
 
 # MP_list = ["min_vel", "min_acc", "min_jerk", "min_snap", "min_acc_stop", "min_jerk_stop", "min_snap_stop", 
 #            "min_jerk_full_stop", "min_snap_full_stop", "pos_waypoint_arrived","pos_waypoint_timed", "pos_waypoint_interp"] 
@@ -189,7 +191,7 @@ class PoseSampler:
                             #transforms.Lambda(self.gaussian_blur),
                             #transforms.ColorJitter(brightness=self.brightness, contrast=self.contrast, saturation=self.saturation),
                             transforms.ToTensor()])
-
+        
         rand_x = []
         rand_y = []
         rand_z = []
@@ -199,21 +201,23 @@ class PoseSampler:
             rand_y.append(uniform(-0.15,0.15))
             rand_z.append(uniform(-0.15,0.15))
         
-        if parcour == "p1": # Spline
+        if parcour == "spline": # Spline
             quat0 = R.from_euler('ZYX',[0.,0.,0.] ,degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[20.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
             quat3 = R.from_euler('ZYX',[-15.,0.,0.],degrees=True).as_quat()
             quat4 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat()
             quat5 = R.from_euler('ZYX',[20.,0.,0.],degrees=True).as_quat()
-            self.gate = [Pose(Vector3r(0.,20.,-2.) , Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
+            self.gate = [Pose(Vector3r(0.,20.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]) , Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
                         Pose(Vector3r(4.,10.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
                         Pose(Vector3r(10.,0.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
                         Pose(Vector3r(5.,-5.,-3) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
                         Pose(Vector3r(0.,-10.,-3) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
                         Pose(Vector3r(-3.,-25.,-2) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))]
+            
+            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
 
-        elif parcour == "p2": # Circle
+        elif parcour == "circle": # Circle
             quat0 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
@@ -222,7 +226,7 @@ class PoseSampler:
             quat5 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat() 
             quat6 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
             quat7 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat()
-            self.gate = [Pose(Vector3r(0.,20.,-2.) , Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
+            self.gate = [Pose(Vector3r(0.,20.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
                         Pose(Vector3r(5.,15.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
                         Pose(Vector3r(10.,10.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
                         Pose(Vector3r(8.,5.,-3) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
@@ -230,8 +234,10 @@ class PoseSampler:
                         Pose(Vector3r(-5.,5.,-2) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3])), 
                         Pose(Vector3r(-10.,10.,-2) + Vector3r(rand_x[6],rand_y[6],rand_z[6]), Quaternionr(quat6[0],quat6[1],quat6[2],quat6[3])),
                         Pose(Vector3r(-5.,15.,-2) + Vector3r(rand_x[7],rand_y[7],rand_z[7]), Quaternionr(quat7[0],quat7[1],quat7[2],quat7[3]))]
+            
+            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
         
-        elif parcour == "p3": # Eight - Infinity
+        elif parcour == "eight": # Eight - Infinity
             quat0 = R.from_euler('ZYX',[55.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
@@ -249,7 +255,7 @@ class PoseSampler:
             quat14 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat() 
             quat15 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat() 
             
-            self.gate = [Pose(Vector3r(1. ,18.,-2.) , Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
+            self.gate = [Pose(Vector3r(1. ,18.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
                         Pose(Vector3r(5. ,15.,-1.) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
                         Pose(Vector3r(9. ,10. ,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
                         Pose(Vector3r(5. ,5. ,-2) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
@@ -265,6 +271,31 @@ class PoseSampler:
                         Pose(Vector3r(-5.,5.,-2) + Vector3r(rand_x[13],rand_y[13],rand_z[13]), Quaternionr(quat13[0],quat13[1],quat13[2],quat13[3])),
                         Pose(Vector3r(-9.,10.,-3) + Vector3r(rand_x[14],rand_y[14],rand_z[14]), Quaternionr(quat14[0],quat14[1],quat14[2],quat14[3])),
                         Pose(Vector3r(-5.,15.,-2.5) + Vector3r(rand_x[15],rand_y[15],rand_z[15]), Quaternionr(quat15[0],quat15[1],quat15[2],quat15[3]))]
+            
+            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
+
+        elif parcour == "hexa": # hexagon
+            quat0 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat()
+            quat1 = R.from_euler('ZYX',[30.,0.,0.],degrees=True).as_quat()
+            quat2 = R.from_euler('ZYX',[-30.,0.,0.],degrees=True).as_quat()
+            quat3 = R.from_euler('ZYX',[-90.,0.,0.],degrees=True).as_quat()
+            quat4 = R.from_euler('ZYX',[-150.,0.,0.],degrees=True).as_quat() 
+            quat5 = R.from_euler('ZYX',[-210.,0.,0.],degrees=True).as_quat() 
+            self.gate = [Pose(Vector3r(10.,25.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
+                        Pose(Vector3r(25.,15.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
+                        Pose(Vector3r(25.,5.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
+                        Pose(Vector3r(10.,-5,-3) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
+                        Pose(Vector3r(-5.,5.,-3) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
+                        Pose(Vector3r(-5.,15.,-2) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))]
+            
+            self.drone_init = Pose(Vector3r(5.,25.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
+
+        elif parcour == "oneshot": # One gate at a time
+            quat0 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat()
+            self.gate = [Pose(Vector3r(10.,25.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))]
+            self.drone_init = Pose(Vector3r(5.,25.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
+        
+        
         else:
             quat0 = R.from_euler('ZYX',[-90.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
@@ -286,10 +317,6 @@ class PoseSampler:
             self.drone_init_2 = Pose(Vector3r(0.,0.,-2), Quaternionr(0., 0., -0.70710678, 0.70710678))
             self.gate_2 = [Pose(Vector3r(0.,-5.,-2.), Quaternionr(0., 0., 0., 1.)),
                         Pose(Vector3r(-2.,-10.,-2.5), Quaternionr(0., 0., -0.25881905, 0.96592583))]
-
-        
-        self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
-
 
 
         self.race_course_radius = 16
@@ -706,8 +733,10 @@ class PoseSampler:
                     print("\nCurrent index: {0}".format(self.curr_idx))
                     print("Predicted r: {0:.3}, Noise coeff: {1:.4}, Covariance sum: {2:.3}".format(pose_gate_body[0][0], sign_coeff*noise_coeff, covariance_sum))
                     print("Waypoint_world: ",waypoint_world)
+                    print("Pose Gate Body: ",pose_gate_body)
                     print("GateLocation: ", self.gate[0])
                     print("Quad Position: ", pos0)
+
                     
                     #print "Brightness: {0:.3}, Contast: {1:.3}, Saturation: {2:.3}".format(self.brightness, self.contrast, self.saturation)
                     if self.flight_log:
@@ -723,7 +752,6 @@ class PoseSampler:
 
         if self.flight_log:
             f.close()
-
 
 
     def update(self, mode):
