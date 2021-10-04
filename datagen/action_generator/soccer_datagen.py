@@ -9,6 +9,7 @@ import airsimdroneracingvae
 import airsimdroneracingvae.types
 import airsimdroneracingvae.utils
 
+#eensncahneg
 # import utils
 curr_dir = os.path.dirname(os.path.abspath(__file__))
 import_path = os.path.join(curr_dir, '..', '..', '..')
