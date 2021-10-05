@@ -33,7 +33,7 @@ def summarize_results(list_all = True):
 
 def main():
 	
-	parcour = input("Choose parcour (p1,p2,p3): ")
+	parcour = input("Choose parcour (spline,circle,hexa,eight): ")
 
 	# check if output folder exists
 	if not os.path.isdir(base_path):

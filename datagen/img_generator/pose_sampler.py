@@ -3,8 +3,8 @@ import numpy as np
 import os
 import sys
 from os.path import isfile, join
-# hahahaha
 import airsimdroneracingvae as airsim
+
 # print(os.path.abspath(airsim.__file__))
 from airsimdroneracingvae.types import Pose, Vector3r, Quaternionr
 import airsimdroneracingvae.types
@@ -43,13 +43,17 @@ from trajectory import Trajectory
 from network import Net, Net_Regressor
 from sympy import Point3D, Line3D
 
+from TrajGen import trajGenerator, Helix_waypoints
+import controller
+from Quadrotor import quadrotor
+
 
 # MP_list = ["min_vel", "min_acc", "min_jerk", "min_snap", "min_acc_stop", "min_jerk_stop", "min_snap_stop", 
 #            "min_jerk_full_stop", "min_snap_full_stop", "pos_waypoint_arrived","pos_waypoint_timed", "pos_waypoint_interp"] 
 
 
 flight_columns = ['true_init_x','true_init_y','true_init_z', 'noise_coeff', 'var_sum', 'diff_x', 'diff_y', 'diff_z', 'v_x', 'v_y', 'v_z', 'diff_phi', 'diff_theta', 'diff_psi', 
-                  'phi_dot', 'theta_dot', 'psi_dot', 'r_var', 'phi_var', 'theta_var', 'psi_var', 'Tf', 'v_average', 'MP_Method', 'Cost', 'Status', 'curr_idx']
+                'phi_dot', 'theta_dot', 'psi_dot', 'r_var', 'phi_var', 'theta_var', 'psi_var', 'Tf', 'v_average', 'MP_Method', 'Cost', 'Status', 'curr_idx']
 
 flight_filename = 'files/data.csv'
 
@@ -62,13 +66,23 @@ class PoseSampler:
         self.current_gate = 0
         self.with_gate = with_gate
         self.client = airsim.MultirotorClient()
+        self.client.enableApiControl(True)
         self.client.confirmConnection()
         self.client.simLoadLevel('Soccer_Field_Easy')
         time.sleep(1)        
         #self.client = airsim.MultirotorClient()
-        self.configureEnvironment()
+        #self.configureEnvironment()
+
+        for gate_object in self.client.simListSceneObjects(".*[Gg]ate.*"):
+            self.client.simDestroyObject(gate_object)
+            time.sleep(0.05)
+
+
+
+
         self.log_path = os.path.join(self.base_path, 'files/flight_log.txt')
         self.flight_log = flight_log
+        self.parcour = parcour
 
         #----- Classifier/Regressor parameters -----------------------------
         self.mp_classifier = Net()
@@ -112,13 +126,13 @@ class PoseSampler:
         self.test_covariances = {"MAX_SAFE":[], "MAX_NO_SAFE":[], "DICE_SAFE" :[], "DICE_NO_SAFE" :[], "min_vel":[], "min_acc":[], "min_jerk":[], "min_jerk_full_stop":[]}
         self.test_methods = {"MAX_SAFE":[], "MAX_NO_SAFE":[], "DICE_SAFE" :[], "DICE_NO_SAFE" :[], "min_vel":[], "min_acc":[], "min_jerk":[], "min_jerk_full_stop":[]}
         self.test_distribution_on_noise = {"MAX_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
-                                           "MAX_NO_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}, 
-                                           "DICE_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
-                                           "DICE_NO_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}}
+                                        "MAX_NO_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}, 
+                                        "DICE_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
+                                        "DICE_NO_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}}
         self.test_distribution_off_noise = {"MAX_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
-                                           "MAX_NO_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}, 
-                                           "DICE_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
-                                           "DICE_NO_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}}
+                                        "MAX_NO_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}, 
+                                        "DICE_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
+                                        "DICE_NO_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}}
         self.test_number = "0_0"
         self.time_coeff = 0.
         self.quad_period = 0.
@@ -128,16 +142,16 @@ class PoseSampler:
 
         #----- Motion planning parameters -----------------------------
         self.MP_methods = {"pos_waypoint_timed":1, "pos_waypoint_interp":2, "min_vel":3, "min_acc":4, "min_jerk":5, "min_snap":6,
-                              "min_acc_stop":7, "min_jerk_stop":8, "min_snap_stop":9, "min_jerk_full_stop":10, "min_snap_full_stop":11,
-                              "pos_waypoint_arrived":12}
+                            "min_acc_stop":7, "min_jerk_stop":8, "min_snap_stop":9, "min_jerk_full_stop":10, "min_snap_full_stop":11,
+                            "pos_waypoint_arrived":12}
         self.MP_names = ["hover", "pos_waypoint_timed", "pos_waypoint_interp", "min_vel", "min_acc", "min_jerk", "min_snap",
-                         "min_acc_stop", "min_jerk_stop", "min_snap_stop", "min_jerk_full_stop", "min_snap_full_stop","safe_mode"]
+                        "min_acc_stop", "min_jerk_stop", "min_snap_stop", "min_jerk_full_stop", "min_snap_full_stop","safe_mode"]
         self.MP_cost = {"pos_waypoint_timed":1e9, "pos_waypoint_interp":1e9, "min_vel":1e9, "min_acc":1e9, "min_jerk":1e9, "min_snap":1e9,
                         "min_acc_stop":1e9, "min_jerk_stop":1e9, "min_snap_stop":1e9, "min_jerk_full_stop":1e9, "min_snap_full_stop":1e9,
                         "pos_waypoint_arrived":1e9}
         self.MP_states = {"pos_waypoint_timed":[], "pos_waypoint_interp":[], "min_vel":[], "min_acc":[], "min_jerk":[], "min_snap":[],
-                          "min_acc_stop":[], "min_jerk_stop":[], "min_snap_stop":[], "min_jerk_full_stop":[], "min_snap_full_stop":[],
-                          "pos_waypoint_arrived":[]}
+                        "min_acc_stop":[], "min_jerk_stop":[], "min_snap_stop":[], "min_jerk_full_stop":[], "min_snap_full_stop":[],
+                        "pos_waypoint_arrived":[]}
 
 
 
@@ -201,7 +215,7 @@ class PoseSampler:
             rand_y.append(uniform(-0.15,0.15))
             rand_z.append(uniform(-0.15,0.15))
         
-        if parcour == "spline": # Spline
+        if self.parcour == "spline": # Spline
             quat0 = R.from_euler('ZYX',[0.,0.,0.] ,degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[20.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
@@ -217,7 +231,7 @@ class PoseSampler:
             
             self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
 
-        elif parcour == "circle": # Circle
+        elif self.parcour == "circle": # Circle
             quat0 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
@@ -237,7 +251,7 @@ class PoseSampler:
             
             self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
         
-        elif parcour == "eight": # Eight - Infinity
+        elif self.parcour == "eight": # Eight - Infinity
             quat0 = R.from_euler('ZYX',[55.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
@@ -274,7 +288,7 @@ class PoseSampler:
             
             self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
 
-        elif parcour == "hexa": # hexagon
+        elif self.parcour == "hexa": # hexagon
             quat0 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[30.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[-30.,0.,0.],degrees=True).as_quat()
@@ -290,12 +304,18 @@ class PoseSampler:
             
             self.drone_init = Pose(Vector3r(5.,25.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
 
-        elif parcour == "oneshot": # One gate at a time
-            quat0 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat()
-            self.gate = [Pose(Vector3r(10.,25.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))]
-            self.drone_init = Pose(Vector3r(5.,25.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
-        
-        
+        elif self.parcour == "2gates": # One gate at a time
+            
+            spawnedGatePos = [0.,20.,-2.]
+            
+            quat1 = R.from_euler('ZYX',[0,0,0] ,degrees=True).as_quat()
+            quat2 = R.from_euler('ZYX',[0,0,0] ,degrees=True).as_quat()
+            self.gate = [Pose(Vector3r(spawnedGatePos[0], spawnedGatePos[1],spawnedGatePos[2]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
+                            Pose(Vector3r(spawnedGatePos[0] + 0.5, spawnedGatePos[1] - 3,spawnedGatePos[2]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3]))]
+
+            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3]))
+
+
         else:
             quat0 = R.from_euler('ZYX',[-90.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
@@ -331,18 +351,24 @@ class PoseSampler:
         self.collision_check_interval = 15
 
         self.circle_track = racing_utils.trajectory_utils.generate_gate_poses(num_gates=6,
-                                                                 race_course_radius=self.race_course_radius,
-                                                                 radius_noise=self.radius_noise,
-                                                                 height_range=self.height_range,
-                                                                 direction=self.direction,
-                                                                 type_of_segment="circle")
+                                                                race_course_radius=self.race_course_radius,
+                                                                radius_noise=self.radius_noise,
+                                                                height_range=self.height_range,
+                                                                direction=self.direction,
+                                                                type_of_segment="circle")
         self.drone_init_circle = Pose(Vector3r(10.,13.,-0.1), Quaternionr(0., 0., 0.98480775, 0.17364818))
 
-
         self.track = self.gate # for circle trajectory change this with circle_track
-        self.drone_init = self.drone_init # for circle trajectory change this with drone_init_circle
+        #self.drone_init = self.drone_init # for circle trajectory change this with drone_init_circle
+
+        #quad_pose = [self.drone_init.position.x_val, self.drone_init.position.y_val, self.drone_init.position.z_val, 0., 0., -np.pi/2]    
+        #self.client.simSetVehiclePose(self.QuadPose(quad_pose), True)
+
+
+
         #-----------------------------------------------------------------------             
 
+    
 
     def find_gate_distances(self):
         gate_1 = self.track[0]
@@ -375,7 +401,7 @@ class PoseSampler:
     def find_gate_edges(self):
         for i in range(len(self.track)):
             rot_matrix = Rotation.from_quat([self.track[i].orientation.x_val, self.track[i].orientation.y_val, 
-                                      self.track[i].orientation.z_val, self.track[i].orientation.w_val]).as_dcm().reshape(3,3)
+                                    self.track[i].orientation.z_val, self.track[i].orientation.w_val]).as_dcm().reshape(3,3)
             gate_x_range = [.75, -.75]
             gate_z_range = [.75, -.75]
             edge_ind = 0
@@ -436,7 +462,7 @@ class PoseSampler:
         softmax = nn.Softmax(dim=1)
         X_tensor = torch.from_numpy(X).to(self.device)
         output = model(X_tensor.float())
-     
+    
         if (method=="MAX_SAFE" or method == "MAX_NO_SAFE") and isClassifier:
             _, pred = torch.max(output, 1)
             return pred.item()
@@ -523,7 +549,7 @@ class PoseSampler:
             return True
 
         return False
-       
+    
 
     def test_collision(self, gate_index):
         phi = np.random.uniform(-np.pi/6, np.pi/6)
@@ -538,7 +564,7 @@ class PoseSampler:
         
 
         rot_matrix = Rotation.from_quat([self.track[gate_index].orientation.x_val, self.track[gate_index].orientation.y_val, 
-                                      self.track[gate_index].orientation.z_val, self.track[gate_index].orientation.w_val]).as_dcm().reshape(3,3)
+                                    self.track[gate_index].orientation.z_val, self.track[gate_index].orientation.w_val]).as_dcm().reshape(3,3)
         gate_x_range = [np.random.uniform(0.6, 1.0), -np.random.uniform(0.6, 1.0)]
         gate_z_range = [np.random.uniform(0.6, 1.0), -np.random.uniform(0.6, 1.0)]
         edge_ind = 0
@@ -577,7 +603,7 @@ class PoseSampler:
         yd = self.track[-1].position.y_val
         zd = self.track[-1].position.z_val
         psid = Rotation.from_quat([self.track[-1].orientation.x_val, self.track[-1].orientation.y_val, 
-                                   self.track[-1].orientation.z_val, self.track[-1].orientation.w_val]).as_euler('ZYX',degrees=False)[0]
+                                self.track[-1].orientation.z_val, self.track[-1].orientation.w_val]).as_euler('ZYX',degrees=False)[0]
 
         target = [xd, yd, zd, psid] 
         check_arrival = False
@@ -604,7 +630,12 @@ class PoseSampler:
         self.state0 = [self.drone_init.position.x_val, self.drone_init.position.y_val, self.drone_init.position.z_val, 0., 0., psi_start, 0., 0., 0., 0., 0., 0.]
 
         self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-        self.quad = Quadrotor(self.state0)
+        pose = [quad_pose[0],quad_pose[1],quad_pose[2]]
+        att = [quad_pose[3],quad_pose[4],quad_pose[5]]
+
+        qq = R.from_euler('ZYX', [quad_pose[5], quad_pose[4], quad_pose[3]]).as_quat()
+        quadpose = Pose(Vector3r(pose[0],pose[1],pose[2]),Quaternionr(qq[0],qq[1],qq[2],qq[3]))
+        self.quad = quadrotor.Quadrotor(pose,att)
         
         self.curr_idx = 0
         self.test_states[method].append(self.quad.state)
@@ -661,7 +692,7 @@ class PoseSampler:
                         #transforms.Lambda(self.gaussian_blur),
                         #transforms.ColorJitter(brightness=self.brightness, contrast=self.contrast, saturation=self.saturation),
                         transforms.ToTensor()])
-                 
+                
             noise_coeff = self.brightness + self.contrast + self.saturation
 
 
@@ -715,9 +746,12 @@ class PoseSampler:
 
                     # Gate ground truth values will be implemented
                     pose_gate_body = pose_gate_body.numpy().reshape(-1,1)
-                   
+                
                     # Trajectory generate
-                    waypoint_world = spherical_to_cartesian(self.quad.state, pose_gate_body)
+
+                    quadpose = self.client.simGetVehiclePose()
+
+                    waypoint_world = spherical_to_cartesian(quadpose, pose_gate_body)
 
                     pos0 = [self.quad.state[0], self.quad.state[1], self.quad.state[2]]
                     vel0 = [self.quad.state[6], self.quad.state[7], self.quad.state[8]]
@@ -725,17 +759,38 @@ class PoseSampler:
                     posf = [waypoint_world[0], waypoint_world[1], waypoint_world[2]]                    
                     yaw0 = self.quad.state[5]
                     yaw_diff = pose_gate_body[3][0]
-                    yawf = (self.quad.state[5]+yaw_diff) + np.pi/2
+                    self.yawf = (self.quad.state[5]+yaw_diff) + np.pi/2
 
                     #yawf = Rotation.from_quat([self.track[self.current_gate].orientation.x_val, self.track[self.current_gate].orientation.y_val, 
                     #                   self.track[self.current_gate].orientation.z_val, self.track[self.current_gate].orientation.w_val]).as_euler('ZYX',degrees=False)[0] - np.pi/2
                     
                     print("\nCurrent index: {0}".format(self.curr_idx))
                     print("Predicted r: {0:.3}, Noise coeff: {1:.4}, Covariance sum: {2:.3}".format(pose_gate_body[0][0], sign_coeff*noise_coeff, covariance_sum))
-                    print("Waypoint_world: ",waypoint_world)
-                    print("Pose Gate Body: ",pose_gate_body)
-                    print("GateLocation: ", self.gate[0])
-                    print("Quad Position: ", pos0)
+                    print("Predicted Gate Location: ",posf)
+                    print("True Gate Location: ", self.gate[0].position)
+                    print("True Quad Position: ", quadpose.position)
+
+
+                    quat_predicted = R.from_euler('ZYX',[0.,0.,self.yawf],degrees=True).as_quat()
+                    self.track = [Pose(Vector3r(posf[0],posf[1],posf[2]),Quaternionr(quat_predicted[0],quat_predicted[1],quat_predicted[2],quat_predicted[3]))]
+
+                    """ if self.parcour == "2gates":
+                        quat1 = R.from_euler('ZYX',[0,0,0] ,degrees=True).as_quat()
+                        self.respawn_gates(quat1)    
+                    else:
+                        self.fly_to_gate() """
+                    
+                    #state = self.quad.get_state()
+                    #quadpose = [state[0][0],state[0][1],state[0][2],-state[2][0],-state[2][1],self.yawf]
+
+                    #self.client.simSetVehiclePose(quadpose, True)
+
+                    #trajectory = self.get_waypoints()
+
+                    self.client.moveToPositionAsync(posf[0],posf[1],posf[2], 2)
+
+                    #self.client.reset()
+                    #time.sleep(10)
 
                     
                     #print "Brightness: {0:.3}, Contast: {1:.3}, Saturation: {2:.3}".format(self.brightness, self.contrast, self.saturation)
@@ -745,13 +800,108 @@ class PoseSampler:
                         #f.write("\nBrightness: {0:.3}, Contast: {1:.3}, Saturation: {2:.3}".format(self.brightness, self.contrast, self.saturation))
                         f.write("\nMP algorithm: " + method)
                         f.write("\nEstimated time of arrival: {0:.3} s.".format(self.Tf))
-                        f.write("\nGate Predicted, x: {0:.3}, y: {1:.3}, z: {2:.3}, psi: {3:.3} deg".format(waypoint_world[0], waypoint_world[1], waypoint_world[2], yawf*180/np.pi))
+                        f.write("\nGate Predicted, x: {0:.3}, y: {1:.3}, z: {2:.3}, psi: {3:.3} deg".format(waypoint_world[0], waypoint_world[1], waypoint_world[2], self.yawf*180/np.pi))
 
 
             self.curr_idx += 1
 
         if self.flight_log:
             f.close()
+
+    def QuadPose(self,quad_pose):
+        x, y, z, roll, pitch, yaw = quad_pose
+        q = R.from_euler('ZYX', [yaw, pitch, roll])  # capital letters denote intrinsic rotation (lower case would be extrinsic)
+    
+        q = q.as_quat()
+        t_o_b = Vector3r(x,y,z)
+        q_o_b = Quaternionr(q[0], q[1], q[2], q[3])
+        return Pose(t_o_b, q_o_b)
+
+    def respawn_gates(self,quat1):
+        j=2
+        
+        spawn_x = self.gate[1].position.x_val + uniform(-1,1)
+        spawn_y = self.gate[1].position.y_val + uniform(-5,-2)
+        spawn_z = self.gate[1].position.z_val + uniform(-0.1,0.1)
+        #spawnedGatePos = [self.gate[1].position.x_val + uniform(-1,1), self.gate[1].position.y_val + uniform(-5,-2), self.gate[1].position.z_val + uniform(-0.1,0.1)]
+        
+        self.fly_to_gate()
+
+        # Delete Gate
+        #self.configureEnvironment() 
+        gate_object = self.client.simListSceneObjects(".*[Gg]ate.*")
+        self.client.simDestroyObject(gate_object[0])
+        #time.sleep(0.05)
+        print("\n ####### Gate is destroyed #######")
+
+        self.gate[0] = self.gate[1]
+        self.gate[1] = Pose(Vector3r(spawn_x, spawn_y,spawn_z), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3]))            
+
+        gate_name = "gate_" + str(j)
+        self.tgt_name = self.client.simSpawnObject(gate_name, "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), 0.75)
+        #self.client.simSetObjectPose(gate_name, self.gate[1], True)
+        
+        self.track = self.gate
+        j = j+1
+
+
+    def fly_to_gate(self):
+
+        waypoints = self.get_waypoints()
+        traj = trajGenerator(waypoints,max_vel = 8,gamma = 1e6)
+        des_states = traj.get_des_state
+        Tmax = traj.TS[-1]
+
+        dt=1/200
+        T=10
+        N=int(T/dt)
+
+        t=np.linspace(0,T,N)
+
+        #state = self.quad.get_state()
+        #state[2][2] = self.yawf
+
+        for i in range(600):  #N
+        #i = 0
+        #while state[0][1] - 0.1 > self.gate[0].position.y_val:
+            #start_time = time.time()
+            #print("State (y): ", state[0][1])
+            #print("Gate (y): ", self.gate[0].position.y_val)
+            
+            state = self.quad.get_state()
+            quadpose = [state[0][0],state[0][1],state[0][2],-state[2][0],-state[2][1],self.yawf]
+
+            self.client.simSetVehiclePose(self.QuadPose(quadpose), True)
+            time.sleep(.04)
+            
+
+            
+            des_state=des_states(t[i])
+
+            if(t[i] >=Tmax):
+                U, M = controller.run_hover(state, des_state,dt)
+            else:
+                U, M = controller.run(state, des_state)
+
+            self.quad.update(dt,U,M)
+            #i=i+1
+            #print("--- %s seconds ---" % (time.time() - start_time))
+
+    def get_waypoints(self):
+
+        state = self.quad.get_state()
+
+        x=[]
+        y=[]
+        z=[]
+        x.append(state[0][0])
+        y.append(state[0][1])
+        z.append(state[0][2])
+        for i in range(len(self.track)):
+            x.append(self.track[i].position.x_val)
+            y.append(self.track[i].position.y_val)
+            z.append(self.track[i].position.z_val)
+        return np.stack((x, y, z), axis=-1)
 
 
     def update(self, mode):
@@ -872,7 +1022,9 @@ class PoseSampler:
             self.client.simDestroyObject(gate_object)
             time.sleep(0.05)
         if self.with_gate:
-            self.tgt_name = self.client.simSpawnObject("gate", "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), 0.75)
+            #self.tgt_name = self.client.simSpawnObject("gate", "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), 0.75)
+            #self.tgt_name = self.client.simSpawnObject("gate", "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), Vector3r(1.5,1.5,1.5), physics_enabled=False)
+            print("x")
         else:
             self.tgt_name = "empty_target"
 
