@@ -4,9 +4,10 @@ import os
 import sys
 from os.path import isfile, join
 import airsimdroneracingvae as airsim
+#import airsim
 
 # print(os.path.abspath(airsim.__file__))
-from airsimdroneracingvae.types import Pose, Vector3r, Quaternionr
+from airsimdroneracingvae.types import DrivetrainType, Pose, Vector3r, Quaternionr
 import airsimdroneracingvae.types
 import airsimdroneracingvae.utils
 from scipy.integrate._ivp.radau import P
@@ -17,7 +18,6 @@ import time
 curr_dir = os.path.dirname(os.path.abspath(__file__))
 import_path = os.path.join(curr_dir, '..', '..')
 sys.path.insert(0, import_path)
-import racing_utils
 
 # Extras for Perception
 import torch
@@ -34,28 +34,9 @@ import random
 from numpy import zeros
 from joblib import dump, load
 
-from sklearn.preprocessing import StandardScaler
 from quadrotor import *
-from mytraj import MyTraj
-import geom_utils
-from geom_utils import QuadPose
-from trajectory import Trajectory
 from network import Net, Net_Regressor
-from sympy import Point3D, Line3D
 
-from TrajGen import trajGenerator, Helix_waypoints
-import controller
-from Quadrotor import quadrotor
-
-
-# MP_list = ["min_vel", "min_acc", "min_jerk", "min_snap", "min_acc_stop", "min_jerk_stop", "min_snap_stop", 
-#            "min_jerk_full_stop", "min_snap_full_stop", "pos_waypoint_arrived","pos_waypoint_timed", "pos_waypoint_interp"] 
-
-
-flight_columns = ['true_init_x','true_init_y','true_init_z', 'noise_coeff', 'var_sum', 'diff_x', 'diff_y', 'diff_z', 'v_x', 'v_y', 'v_z', 'diff_phi', 'diff_theta', 'diff_psi', 
-                'phi_dot', 'theta_dot', 'psi_dot', 'r_var', 'phi_var', 'theta_var', 'psi_var', 'Tf', 'v_average', 'MP_Method', 'Cost', 'Status', 'curr_idx']
-
-flight_filename = 'files/data.csv'
 
 class PoseSampler:
     def __init__(self, dataset_path, flight_log, parcour, with_gate=True):
@@ -66,19 +47,15 @@ class PoseSampler:
         self.current_gate = 0
         self.with_gate = with_gate
         self.client = airsim.MultirotorClient()
-        self.client.enableApiControl(True)
         self.client.confirmConnection()
+        self.client.enableApiControl(True)
         self.client.simLoadLevel('Soccer_Field_Easy')
         time.sleep(1)        
-        #self.client = airsim.MultirotorClient()
-        #self.configureEnvironment()
+        self.configureEnvironment()
 
         for gate_object in self.client.simListSceneObjects(".*[Gg]ate.*"):
             self.client.simDestroyObject(gate_object)
             time.sleep(0.05)
-
-
-
 
         self.log_path = os.path.join(self.base_path, 'files/flight_log.txt')
         self.flight_log = flight_log
@@ -88,84 +65,9 @@ class PoseSampler:
         self.mp_classifier = Net()
         self.t_or_s_classifier = Net()
         self.speed_regressor = Net_Regressor()
-        self.time_regressor = None
-        self.mp_scaler = None
-        self.t_or_s_scaler = None
-        self.speed_scaler = None
-        self.time_scaler = None
+ 
 
-        #----- Drone parameters -----------------------------
-        self.quad = None
-        self.dtau = 1e-3
-        self.Tf = 0.
-        self.xd_ddot_pr = 0.
-        self.xd_dddot_pr = 0.
-        self.yd_ddot_pr = 0.
-        self.yd_dddot_pr = 0.
-        self.psid_pr = 0.
-        self.psid_dot_pr = 0.
-        self.x_dot_pr = 0.
-        self.y_dot_pr = 0.
-        self.z_dot_pr = 0.
-        self.vel_sum = 0.
-        self.quadrotor_freq = int(1. / self.dtau)
-        self.method = "MAX"
-        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-        self.device = "cpu"
-        self.model = Net()
-        self.model = self.model.to(self.device)
-        # self.model.load_state_dict(torch.load('best_model.pt'))
-        # self.model.eval()
-        self.state0 = [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]
-        self.test_states = {"MAX_SAFE":[], "MAX_NO_SAFE":[], "DICE_SAFE" :[], "DICE_NO_SAFE" :[], "min_vel":[], "min_acc":[], "min_jerk":[], "min_jerk_full_stop":[]}
-        self.test_costs = {"MAX_SAFE":0., "MAX_NO_SAFE":0., "DICE_SAFE" :0., "DICE_NO_SAFE" :0., "min_vel":0., "min_acc":0., "min_jerk":0., "min_jerk_full_stop":0.}
-        self.test_arrival_time = {"MAX_SAFE":0., "MAX_NO_SAFE":0., "DICE_SAFE" :0., "DICE_NO_SAFE" :0., "min_vel":0., "min_acc":0., "min_jerk":0., "min_jerk_full_stop":0.}
-        self.test_modes = ["MAX_SAFE", "MAX_NO_SAFE", "DICE_SAFE", "DICE_NO_SAFE", "min_vel", "min_acc", "min_jerk", "min_jerk_full_stop"]
-        self.test_safe_counter = {"MAX_SAFE":0., "MAX_NO_SAFE":0., "DICE_SAFE" :0., "DICE_NO_SAFE" :0., "min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}
-        # self.test_modes = ["MAX", "min_vel"]
         self.test_covariances = {"MAX_SAFE":[], "MAX_NO_SAFE":[], "DICE_SAFE" :[], "DICE_NO_SAFE" :[], "min_vel":[], "min_acc":[], "min_jerk":[], "min_jerk_full_stop":[]}
-        self.test_methods = {"MAX_SAFE":[], "MAX_NO_SAFE":[], "DICE_SAFE" :[], "DICE_NO_SAFE" :[], "min_vel":[], "min_acc":[], "min_jerk":[], "min_jerk_full_stop":[]}
-        self.test_distribution_on_noise = {"MAX_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
-                                        "MAX_NO_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}, 
-                                        "DICE_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
-                                        "DICE_NO_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}}
-        self.test_distribution_off_noise = {"MAX_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
-                                        "MAX_NO_SAFE":{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}, 
-                                        "DICE_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0, "safe_mode":0}, 
-                                        "DICE_NO_SAFE" :{"min_vel":0, "min_acc":0, "min_jerk":0, "min_jerk_full_stop":0}}
-        self.test_number = "0_0"
-        self.time_coeff = 0.
-        self.quad_period = 0.
-        self.drone_status = ""
-
-        # pickle.dump(self.test_states, open(self.base_path + "files/test_states.pkl","wb"), protocol=2)
-
-        #----- Motion planning parameters -----------------------------
-        self.MP_methods = {"pos_waypoint_timed":1, "pos_waypoint_interp":2, "min_vel":3, "min_acc":4, "min_jerk":5, "min_snap":6,
-                            "min_acc_stop":7, "min_jerk_stop":8, "min_snap_stop":9, "min_jerk_full_stop":10, "min_snap_full_stop":11,
-                            "pos_waypoint_arrived":12}
-        self.MP_names = ["hover", "pos_waypoint_timed", "pos_waypoint_interp", "min_vel", "min_acc", "min_jerk", "min_snap",
-                        "min_acc_stop", "min_jerk_stop", "min_snap_stop", "min_jerk_full_stop", "min_snap_full_stop","safe_mode"]
-        self.MP_cost = {"pos_waypoint_timed":1e9, "pos_waypoint_interp":1e9, "min_vel":1e9, "min_acc":1e9, "min_jerk":1e9, "min_snap":1e9,
-                        "min_acc_stop":1e9, "min_jerk_stop":1e9, "min_snap_stop":1e9, "min_jerk_full_stop":1e9, "min_snap_full_stop":1e9,
-                        "pos_waypoint_arrived":1e9}
-        self.MP_states = {"pos_waypoint_timed":[], "pos_waypoint_interp":[], "min_vel":[], "min_acc":[], "min_jerk":[], "min_snap":[],
-                        "min_acc_stop":[], "min_jerk_stop":[], "min_snap_stop":[], "min_jerk_full_stop":[], "min_snap_full_stop":[],
-                        "pos_waypoint_arrived":[]}
-
-
-
-        self.trajSelect = np.zeros(3)
-        # Select Position Trajectory Type (0: hover,                    1: pos_waypoint_timed,      2: pos_waypoint_interp,    
-        #                                  3: minimum velocity          4: minimum accel,           5: minimum jerk,           6: minimum snap
-        #                                  7: minimum accel_stop        8: minimum jerk_stop        9: minimum snap_stop
-        #                                 10: minimum jerk_full_stop   11: minimum snap_full_stop
-        #                                 12: pos_waypoint_arrived
-        self.trajSelect[0] = 7
-        # Select Yaw Trajectory Type      (0: none                      1: yaw_waypoint_timed,      2: yaw_waypoint_interp     3: follow          4: zero)
-        self.trajSelect[1] = 2
-        # Select if waypoint time is used, or if average speed is used to calculate waypoint time   (0: waypoint time,   1: average speed)
-        self.trajSelect[2] = 1
         
 
         #---- Model import ---------------------------------
@@ -191,13 +93,9 @@ class PoseSampler:
         self.lstmR.eval() 
 
 
-        self.angle_lim = 0.
-        self.pos_lim = 0.
         self.brightness = 0.
         self.contrast = 0.
         self.saturation = 0.
-        self.blur_coeff = 0.
-        self.blur_range = 0
         self.period_denum = 30.
 
         self.transformation = transforms.Compose([
@@ -215,483 +113,79 @@ class PoseSampler:
             rand_y.append(uniform(-0.15,0.15))
             rand_z.append(uniform(-0.15,0.15))
         
-        if self.parcour == "spline": # Spline
-            quat0 = R.from_euler('ZYX',[0.,0.,0.] ,degrees=True).as_quat()
-            quat1 = R.from_euler('ZYX',[20.,0.,0.],degrees=True).as_quat()
-            quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
-            quat3 = R.from_euler('ZYX',[-15.,0.,0.],degrees=True).as_quat()
-            quat4 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat()
-            quat5 = R.from_euler('ZYX',[20.,0.,0.],degrees=True).as_quat()
-            self.gate = [Pose(Vector3r(0.,20.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]) , Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
-                        Pose(Vector3r(4.,10.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-                        Pose(Vector3r(10.,0.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
-                        Pose(Vector3r(5.,-5.,-3) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
-                        Pose(Vector3r(0.,-10.,-3) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
-                        Pose(Vector3r(-3.,-25.,-2) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))]
-            
-            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
 
-        elif self.parcour == "circle": # Circle
-            quat0 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
-            quat1 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
-            quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
-            quat3 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat()
-            quat4 = R.from_euler('ZYX',[-90.,0.,0.],degrees=True).as_quat() 
-            quat5 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat() 
-            quat6 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
-            quat7 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat()
-            self.gate = [Pose(Vector3r(0.,20.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
-                        Pose(Vector3r(5.,15.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-                        Pose(Vector3r(10.,10.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
-                        Pose(Vector3r(8.,5.,-3) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
-                        Pose(Vector3r(0.,0.,-3) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
-                        Pose(Vector3r(-5.,5.,-2) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3])), 
-                        Pose(Vector3r(-10.,10.,-2) + Vector3r(rand_x[6],rand_y[6],rand_z[6]), Quaternionr(quat6[0],quat6[1],quat6[2],quat6[3])),
-                        Pose(Vector3r(-5.,15.,-2) + Vector3r(rand_x[7],rand_y[7],rand_z[7]), Quaternionr(quat7[0],quat7[1],quat7[2],quat7[3]))]
-            
-            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
-        
-        elif self.parcour == "eight": # Eight - Infinity
-            quat0 = R.from_euler('ZYX',[55.,0.,0.],degrees=True).as_quat()
-            quat1 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
-            quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
-            quat3 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat()
-            quat4 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()  
-            quat5 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat() 
-            quat6 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat() 
-            quat7 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat() 
-            quat8 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat() 
-            quat9 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat() 
-            quat10 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()  
-            quat11 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
-            quat12 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()  
-            quat13 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat() 
-            quat14 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat() 
-            quat15 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat() 
-            
-            self.gate = [Pose(Vector3r(1. ,18.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
-                        Pose(Vector3r(5. ,15.,-1.) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-                        Pose(Vector3r(9. ,10. ,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
-                        Pose(Vector3r(5. ,5. ,-2) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
-                        Pose(Vector3r(0.,0.,-1) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
-                        Pose(Vector3r(-5.,-5.,-1.5) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3])),
-                        Pose(Vector3r(-9.,-10.,-2.5) + Vector3r(rand_x[6],rand_y[6],rand_z[6]), Quaternionr(quat6[0],quat6[1],quat6[2],quat6[3])),
-                        Pose(Vector3r(-5.,-15.,-3) + Vector3r(rand_x[7],rand_y[7],rand_z[7]), Quaternionr(quat7[0],quat7[1],quat7[2],quat7[3])),
-                        Pose(Vector3r(0.,-18.,-2) + Vector3r(rand_x[8],rand_y[8],rand_z[8]), Quaternionr(quat8[0],quat8[1],quat8[2],quat8[3])),
-                        Pose(Vector3r(5.,-15.,-1) + Vector3r(rand_x[9],rand_y[9],rand_z[9]), Quaternionr(quat9[0],quat9[1],quat9[2],quat9[3])),
-                        Pose(Vector3r(9.,-10.,-1.5) + Vector3r(rand_x[10],rand_y[10],rand_z[10]), Quaternionr(quat10[0],quat10[1],quat10[2],quat10[3])),
-                        Pose(Vector3r(5.,-5.,-2) + Vector3r(rand_x[11],rand_y[11],rand_z[11]), Quaternionr(quat11[0],quat11[1],quat11[2],quat11[3])), 
-                        Pose(Vector3r(0.,0.,-3) + Vector3r(rand_x[12],rand_y[12],rand_z[12]), Quaternionr(quat12[0],quat12[1],quat12[2],quat12[3])),
-                        Pose(Vector3r(-5.,5.,-2) + Vector3r(rand_x[13],rand_y[13],rand_z[13]), Quaternionr(quat13[0],quat13[1],quat13[2],quat13[3])),
-                        Pose(Vector3r(-9.,10.,-3) + Vector3r(rand_x[14],rand_y[14],rand_z[14]), Quaternionr(quat14[0],quat14[1],quat14[2],quat14[3])),
-                        Pose(Vector3r(-5.,15.,-2.5) + Vector3r(rand_x[15],rand_y[15],rand_z[15]), Quaternionr(quat15[0],quat15[1],quat15[2],quat15[3]))]
-            
-            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
-
-        elif self.parcour == "hexa": # hexagon
+        if self.parcour == "hexa": # hexagon
             quat0 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[30.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[-30.,0.,0.],degrees=True).as_quat()
             quat3 = R.from_euler('ZYX',[-90.,0.,0.],degrees=True).as_quat()
             quat4 = R.from_euler('ZYX',[-150.,0.,0.],degrees=True).as_quat() 
             quat5 = R.from_euler('ZYX',[-210.,0.,0.],degrees=True).as_quat() 
-            self.gate = [Pose(Vector3r(10.,25.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
-                        Pose(Vector3r(25.,15.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-                        Pose(Vector3r(25.,5.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
+            self.track = [Pose(Vector3r(10.,25.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
+                        Pose(Vector3r(20.,15.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
+                        Pose(Vector3r(20.,5.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
                         Pose(Vector3r(10.,-5,-3) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
                         Pose(Vector3r(-5.,5.,-3) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
                         Pose(Vector3r(-5.,15.,-2) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))]
+
+
+            quat_drone = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
+            self.drone_init = Pose(Vector3r(5.,25.,-2), Quaternionr(quat_drone[0],quat_drone[1],quat_drone[2],quat_drone[3]))
+
             
-            self.drone_init = Pose(Vector3r(5.,25.,-2), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3]))
-
-        elif self.parcour == "2gates": # One gate at a time
             
-            spawnedGatePos = [0.,20.,-2.]
+            #Pose(Vector3r(30.,5.,-1) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
+            #Pose(Vector3r(10.,-5,-2) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
+            #Pose(Vector3r(-5.,5.,-2) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
+            #Pose(Vector3r(-5.,15.,-2.5) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))
             
-            quat1 = R.from_euler('ZYX',[0,0,0] ,degrees=True).as_quat()
-            quat2 = R.from_euler('ZYX',[0,0,0] ,degrees=True).as_quat()
-            self.gate = [Pose(Vector3r(spawnedGatePos[0], spawnedGatePos[1],spawnedGatePos[2]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-                            Pose(Vector3r(spawnedGatePos[0] + 0.5, spawnedGatePos[1] - 3,spawnedGatePos[2]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3]))]
-
-            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3]))
-
-
-        else:
-            quat0 = R.from_euler('ZYX',[-90.,0.,0.],degrees=True).as_quat()
-            quat1 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
-            quat2 = R.from_euler('ZYX',[30.,0.,0.],degrees=True).as_quat()
-            quat3 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
-            quat4 = R.from_euler('ZYX',[60.,0.,0.],degrees=True).as_quat()
-            quat5 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat()
-            #self.gate = [Pose(Vector3r(0.,2.,-2.), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-            #            Pose(Vector3r(2.,-5.,-2.4), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
-            #           Pose(Vector3r(4.,-13.,-3.1), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
-                #          Pose(Vector3r(7.,-20.,-3.75), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3]))]
-                #         #Pose(Vector3r(9.,-20.,-4.), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))]
-
-            #Previous gates
-            self.gate = [Pose(Vector3r(0.,20.,-2.), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-                        Pose(Vector3r(4.,10.,-1), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
-                        Pose(Vector3r(10.,0.,-1.5), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3]))]
-
-            self.drone_init_2 = Pose(Vector3r(0.,0.,-2), Quaternionr(0., 0., -0.70710678, 0.70710678))
-            self.gate_2 = [Pose(Vector3r(0.,-5.,-2.), Quaternionr(0., 0., 0., 1.)),
-                        Pose(Vector3r(-2.,-10.,-2.5), Quaternionr(0., 0., -0.25881905, 0.96592583))]
-
-
-        self.race_course_radius = 16
-        self.radius_noise = 0.1
-        self.height_range = [0, -1.0]
-        self.direction = 0
-        self.line_list = []
-        self.gate_gate_distances = []
-        self.gate_gate_edge_lines = []
-        self.gate_edge_list = []
-        self.gate_edge_distances = []
-        self.collision_check_interval = 15
-
-        self.circle_track = racing_utils.trajectory_utils.generate_gate_poses(num_gates=6,
-                                                                race_course_radius=self.race_course_radius,
-                                                                radius_noise=self.radius_noise,
-                                                                height_range=self.height_range,
-                                                                direction=self.direction,
-                                                                type_of_segment="circle")
-        self.drone_init_circle = Pose(Vector3r(10.,13.,-0.1), Quaternionr(0., 0., 0.98480775, 0.17364818))
-
-        self.track = self.gate # for circle trajectory change this with circle_track
-        #self.drone_init = self.drone_init # for circle trajectory change this with drone_init_circle
-
-        #quad_pose = [self.drone_init.position.x_val, self.drone_init.position.y_val, self.drone_init.position.z_val, 0., 0., -np.pi/2]    
-        #self.client.simSetVehiclePose(self.QuadPose(quad_pose), True)
-
-
 
         #-----------------------------------------------------------------------             
-
     
-
-    def find_gate_distances(self):
-        gate_1 = self.track[0]
-        init_to_gate = np.linalg.norm([gate_1.position.x_val-self.drone_init.position.x_val, gate_1.position.y_val-self.drone_init.position.y_val, gate_1.position.z_val-self.drone_init.position.z_val])
-        self.gate_gate_distances.append(init_to_gate)
-        for i in range(len(self.track)-1):
-            gate_1 = self.track[i]
-            gate_2 = self.track[i+1]
-            gate_to_gate = np.linalg.norm([gate_1.position.x_val-gate_2.position.x_val, gate_1.position.y_val-gate_2.position.y_val, gate_1.position.z_val-gate_2.position.z_val])
-            self.gate_gate_distances.append(gate_to_gate)
-
-
-    def check_on_road(self):
-        gate_drone_distances = []
-        for i in range(len(self.track)):
-            drone_x, drone_y, drone_z = self.quad.state[0], self.quad.state[1], self.quad.state[2]
-            gate_x, gate_y, gate_z = self.track[i].position.x_val, self.track[i].position.y_val, self.track[i].position.z_val
-            drone_to_center = np.linalg.norm([gate_x-drone_x, gate_y-drone_y, gate_z-drone_z])
-            gate_drone_distances.append(drone_to_center)
-            
-        max_gate_to_gate = np.max(self.gate_gate_distances)
-        min_drone_to_gate = np.min(gate_drone_distances)
-
-        if min_drone_to_gate > 1.1 * max_gate_to_gate:
-            return False
-
-        return True
-
-
-    def find_gate_edges(self):
-        for i in range(len(self.track)):
-            rot_matrix = Rotation.from_quat([self.track[i].orientation.x_val, self.track[i].orientation.y_val, 
-                                    self.track[i].orientation.z_val, self.track[i].orientation.w_val]).as_dcm().reshape(3,3)
-            gate_x_range = [.75, -.75]
-            gate_z_range = [.75, -.75]
-            edge_ind = 0
-            #print "\nGate Ind: {0}, Gate x={1:.3}, y={2:.3}, z={3:.3}".format(i+1, self.track[i].position.x_val, self.track[i].position.y_val, self.track[i].position.z_val)
-            gate_pos = np.array([self.track[i].position.x_val, self.track[i].position.y_val, self.track[i].position.z_val])
-            
-            check_list = []
-            gate_edge_list = []
-            # print ""
-            for x_rng in gate_x_range:
-                for z_rng in gate_z_range:
-                    gate_edge_range = np.array([x_rng, 0., z_rng])
-                    gate_edge_world = np.dot(rot_matrix, gate_edge_range.reshape(-1,1)).ravel()
-                    gate_edge_point = np.array([gate_pos[0]+gate_edge_world[0], gate_pos[1]+gate_edge_world[1], gate_pos[2]+gate_edge_world[2]])
-                    edge_ind += 1
-                    # print "Index: {0}, Edge x={1:.3}, y={2:.3}, z={3:.3}".format(edge_ind, gate_edge_point[0], gate_edge_point[1], gate_edge_point[2])
-                    # quad_pose = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], 0., 0., 0.]
-                    # self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-                    # time.sleep(3)
-                    gate_edge_list.append([gate_edge_point[0], gate_edge_point[1], gate_edge_point[2]])
-
-            ind = 0
-            # print "\nFor Gate: " + str(i)
-            # print "They are on the same line"
-            for i in range(len(gate_edge_list)):
-                for j in range(len(gate_edge_list)):
-                    edge_i = np.array(gate_edge_list[i])
-                    edge_j = np.array(gate_edge_list[j])
-                    if i != j and (i+j) != 3 and [i,j] not in check_list and [j,i] not in check_list:
-                        # print "Index: " + str(ind) + " - " + str(i) + "/" + str(j)
-                        # print "edge_i: " + str(edge_i) + " edge_j: " + str(edge_j)
-                        u_v = abs(edge_i - edge_j)
-                        current_list = [edge_i, edge_j, u_v]
-                        self.line_list.append(current_list)
-                        check_list.append([i,j])
-                        check_list.append([j,i])
-                        ind += 1
-
-                        # print "Edge_i"
-                        # quad_pose = [edge_i[0], edge_i[1], edge_i[2], -0., -0., 0.]
-                        # self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-                        # time.sleep(3)
-                        # print "Edge_j"
-                        # quad_pose = [edge_j[0], edge_j[1], edge_j[2], -0., -0., 0.]
-                        # self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-                        # time.sleep(3)
-
-
-
-    def gaussian_blur(self, img):
-        image = np.array(img)        
-        image_blur = cv2.GaussianBlur(image,(65,65),self.blur_coeff)
-        return image_blur
-        
-
-    def predict(self, X, model, isClassifier=True, method="MAX_SAFE"):
-        model.eval()  # Set model to evaluation mode
-        softmax = nn.Softmax(dim=1)
-        X_tensor = torch.from_numpy(X).to(self.device)
-        output = model(X_tensor.float())
-    
-        if (method=="MAX_SAFE" or method == "MAX_NO_SAFE") and isClassifier:
-            _, pred = torch.max(output, 1)
-            return pred.item()
-
-        elif (method=="DICE_SAFE" or method == "DICE_NO_SAFE") and isClassifier:
-            probs = softmax(output).cpu().detach().numpy()[0]
-            pred_index = np.random.choice([0, 1, 2, 3, 4], 1, p=probs)[0]
-            return pred_index
-
-        return output.item() # if mode is regression
-
-    def check_collision(self, max_distance = 0.15):
-        distance_list = []
-        for i in range(len(self.track)):
-            gate = self.track[i]
-            distance = np.linalg.norm([self.quad.state[0] - gate.position.x_val, self.quad.state[1] - gate.position.y_val, self.quad.state[2] - gate.position.z_val])
-            distance_list.append(distance)        
-
-        distance_min = np.min(distance_list) # this is the distance of drone's center point to the closest gate 
-        #print "Minimum distance: {0:.3}".format(distance_min)
-
-        if distance_min < 1.: # if this value less than threshold, collision check should be done
-            drone_x_range = [.1, -.1]
-            drone_y_range = [.1, -.1]
-            drone_z_range = [.025, -.025]
-            rot_matrix = R.from_euler('ZYX',[self.quad.state[5], self.quad.state[4], self.quad.state[3]],degrees=False).as_dcm().reshape(3,3)
-            drone_pos = np.array([self.quad.state[0], self.quad.state[1], self.quad.state[2]])
-            edge_ind = 0
-
-            #Collision check for drone's centroid
-            # for i, line in enumerate(self.line_list):
-            #     edge_i, edge_j, u_v = line
-            #     # p1, p2, p3 = Point3D(edge_i[0], edge_i[1], edge_i[2]), Point3D(edge_j[0], edge_j[1], edge_j[2]), Point3D(drone_pos[0], drone_pos[1], drone_pos[2])
-            #     # l1 = Line3D(p1, p2) 
-            #     # distance = l1.distance(p3).evalf()
-            #     distance_from_center = edge_i - drone_pos
-            #     distance = np.linalg.norm(np.cross(distance_from_center, u_v)) / np.linalg.norm(u_v)
-                
-            #     #print "Edge: {0}, (Numeric) Distance from the center: {1:.3}".format(i, distance) 
-            #     if distance < max_distance:
-            #         print "Collision detected!"
-            #         print "Index: {0}, Drone center x={1:.3}, y={2:.3}, z={3:.3}".format(i, drone_pos[0], drone_pos[1], drone_pos[2])
-
-            #         return True
-
-            # Collision check for Drone's corner points
-            for x_rng in drone_x_range:
-                for y_rng in drone_y_range:
-                    for z_rng in drone_z_range:
-                        drone_range = np.array([x_rng, y_rng, z_rng])
-                        drone_range_world = np.dot(rot_matrix.T, drone_range.reshape(-1,1)).ravel()
-                        drone_edge_point = np.array([drone_pos[0]+drone_range_world[0], drone_pos[1]+drone_range_world[1], drone_pos[2]+drone_range_world[2]])
-                        edge_ind += 1
-                        
-                        
-                        for i, line in enumerate(self.line_list):
-                            edge_i, edge_j, u_v = line
-                            distance_from_center = edge_i - drone_edge_point
-                            distance = np.linalg.norm(np.cross(distance_from_center, u_v)) / np.linalg.norm(u_v)
-                            #print "Edge: {0}, (Numeric) Distance from the center: {1:.3}".format(i, distance) 
-                            if distance < max_distance:
-                                print("Collision detected!")
-                                print("Index: {0}, Drone corner x={1:.3}, y={2:.3}, z={3:.3}".format(i, drone_edge_point[0], drone_edge_point[1], drone_edge_point[2]))
-
-                                return True
-            
-            # print "No Collision!"
-            return False
-
-
-        else:
-            return False
-
-    def isThereAnyGate(self, img_rgb):
-        # loop over the boundaries
-        low_red = np.array([161, 155, 84])
-        high_red = np.array([179, 255, 255])
-        hsv_frame = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2HSV)
-        red_mask = cv2.inRange(img_rgb, low_red, high_red)
-        red = cv2.bitwise_and(img_rgb, img_rgb, mask=red_mask)
-
-        if red.any():
-            #print "there is a gate on the frame!"
-            return True
-
-        return False
-    
-
-    def test_collision(self, gate_index):
-        phi = np.random.uniform(-np.pi/6, np.pi/6)
-        theta =  np.random.uniform(-np.pi/6, np.pi/6)
-        psi = np.random.uniform(-np.pi/6, np.pi/6)
-        print("\nCenter Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(self.track[gate_index].position.x_val, self.track[gate_index].position.y_val, self.track[gate_index].position.z_val))
-        quad_pose = [self.track[gate_index].position.x_val, self.track[gate_index].position.y_val, self.track[gate_index].position.z_val, -phi, -theta, psi]
-        self.quad.state = [quad_pose[0], quad_pose[1], quad_pose[2], phi, theta, psi, 0., 0., 0., 0., 0., 0.]
-        self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-        self.check_collision()
-        time.sleep(5)
-        
-
-        rot_matrix = Rotation.from_quat([self.track[gate_index].orientation.x_val, self.track[gate_index].orientation.y_val, 
-                                    self.track[gate_index].orientation.z_val, self.track[gate_index].orientation.w_val]).as_dcm().reshape(3,3)
-        gate_x_range = [np.random.uniform(0.6, 1.0), -np.random.uniform(0.6, 1.0)]
-        gate_z_range = [np.random.uniform(0.6, 1.0), -np.random.uniform(0.6, 1.0)]
-        edge_ind = 0
-        #print "\nGate Ind: {0}, Gate x={1:.3}, y={2:.3}, z={3:.3}".format(i+1, self.track[i].position.x_val, self.track[i].position.y_val, self.track[i].position.z_val)
-        gate_pos = np.array([self.track[gate_index].position.x_val, self.track[gate_index].position.y_val, self.track[gate_index].position.z_val])
-        gate_edge_list = []
-        for x_rng in gate_x_range:
-            gate_edge_range = np.array([x_rng/1.5, 0., 0.25*np.random.uniform(-1,1)])
-            gate_edge_world = np.dot(rot_matrix, gate_edge_range.reshape(-1,1)).ravel()
-            gate_edge_point = np.array([gate_pos[0]+gate_edge_world[0], gate_pos[1]+gate_edge_world[1], gate_pos[2]+gate_edge_world[2]])
-            print("\nEdge Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(gate_edge_point[0], gate_edge_point[1], gate_edge_point[2]))
-            self.quad.state = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], phi, theta, psi, 0., 0., 0., 0., 0., 0.]
-            quad_pose = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], -phi, -theta, psi]
-            self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-            self.check_collision()
-            time.sleep(5)
-            
-
-        for z_rng in gate_z_range:
-            gate_edge_range = np.array([0.25*np.random.uniform(-1,1), 0., z_rng/1.5])
-            gate_edge_world = np.dot(rot_matrix, gate_edge_range.reshape(-1,1)).ravel()
-            gate_edge_point = np.array([gate_pos[0]+gate_edge_world[0], gate_pos[1]+gate_edge_world[1], gate_pos[2]+gate_edge_world[2]])
-            edge_ind += 1
-            print("\nEdge Drone Pos x={0:.3}, y={1:.3}, z={2:.3}".format(gate_edge_point[0], gate_edge_point[1], gate_edge_point[2]))
-            self.quad.state = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], phi, theta, psi, 0., 0., 0., 0., 0., 0.]
-            quad_pose = [gate_edge_point[0], gate_edge_point[1], gate_edge_point[2], -phi, -theta, psi]
-            self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-            self.check_collision()
-            time.sleep(5) 
-
-
-    def check_completion(self, quad_pose, eps=0.45):
-        x, y, z = quad_pose[0], quad_pose[1], quad_pose[2]
-
-        xd = self.track[-1].position.x_val
-        yd = self.track[-1].position.y_val
-        zd = self.track[-1].position.z_val
-        psid = Rotation.from_quat([self.track[-1].orientation.x_val, self.track[-1].orientation.y_val, 
-                                self.track[-1].orientation.z_val, self.track[-1].orientation.w_val]).as_euler('ZYX',degrees=False)[0]
-
-        target = [xd, yd, zd, psid] 
-        check_arrival = False
-
-
-        if ( (abs(abs(xd)-abs(x)) <= eps) and (abs(abs(yd)-abs(y)) <= eps) and (abs(abs(zd)-abs(z)) <= eps)):
-            self.quad.calculate_cost(target=target, final_calculation=True)
-            check_arrival = True
-
-        return check_arrival
 
 
     def test_algorithm(self, method = "MAX", use_model = False, safe_mode = True, time_or_speed = 1, v_average = 1.):
         
         pose_prediction = np.zeros((1000,4),dtype=np.float32)
         prediction_std = np.zeros((4,1),dtype=np.float32)
-        labels_dict = {0:3, 1:4, 2:5, 3:10, 4:-1}
-        gate_target = self.track[0]
-        gate_psi = Rotation.from_quat([gate_target.orientation.x_val, gate_target.orientation.y_val, gate_target.orientation.z_val, gate_target.orientation.w_val]).as_euler('ZYX',degrees=False)[0]
-        psi_start = gate_psi - np.pi/2  #drone kapi karsisinde olacak sekilde durmali
+
+
+        self.client.enableApiControl(True)
+        time.sleep(7)
+        ApiControlCheck = self.client.isApiControlEnabled()
 
         #if drone is at initial point
-        quad_pose = [self.drone_init.position.x_val, self.drone_init.position.y_val, self.drone_init.position.z_val, 0., 0., psi_start]
-        self.state0 = [self.drone_init.position.x_val, self.drone_init.position.y_val, self.drone_init.position.z_val, 0., 0., psi_start, 0., 0., 0., 0., 0., 0.]
+        self.client.simSetVehiclePose(self.drone_init, True)
 
-        self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-        pose = [quad_pose[0],quad_pose[1],quad_pose[2]]
-        att = [quad_pose[3],quad_pose[4],quad_pose[5]]
-
-        qq = R.from_euler('ZYX', [quad_pose[5], quad_pose[4], quad_pose[3]]).as_quat()
-        quadpose = Pose(Vector3r(pose[0],pose[1],pose[2]),Quaternionr(qq[0],qq[1],qq[2],qq[3]))
-        self.quad = quadrotor.Quadrotor(pose,att)
+        print("Api control enabled: ",ApiControlCheck)
+        
+        self.client.moveToPositionAsync(10,25,-2,2,drivetrain=DrivetrainType.ForwardOnly).join()
         
         self.curr_idx = 0
-        self.test_states[method].append(self.quad.state)
     
-
         track_completed = False
         fail_check = False
-        collision_check = False
-        init_start = True
+
 
         covariance_sum = 0.
         prediction_std = [0., 0., 0., 0.]
         sign_coeff = 0. 
         covariance_list = []
         cov_rep_num = 5
-        anyGate = True
-        noise_on = False
-        previous_idx = 0
 
-        final_target = [self.track[-1].position.x_val, self.track[-1].position.y_val, self.track[-1].position.z_val]
 
-        if self.flight_log:
-            f=open(self.log_path, "a")
-
-        while((not track_completed) and (not fail_check)):
-
-            if noise_on:
-                if (self.curr_idx-previous_idx) >= 3:
-                    noise_on = False
-                    previous_idx = self.curr_idx
-            else:
-                if (self.curr_idx-previous_idx) >= 10 and self.curr_idx >= 15:
-                    noise_on = True
-                    previous_idx = self.curr_idx
-
-            
+        while((not track_completed) and (not fail_check)):            
 
             sign_coeff = 1.
-            if noise_on:
-                self.brightness = random.uniform(2,4)
-                self.contrast = random.uniform(2,4)
-                self.saturation = random.uniform(0,0.1)
-                self.transformation = transforms.Compose([
-                        transforms.Resize([200, 200]),
-                        #transforms.Lambda(self.gaussian_blur),
-                        transforms.ColorJitter(brightness=self.brightness, contrast=self.contrast, saturation=self.saturation),
-                        transforms.ToTensor()])
-            else:
-                self.brightness = 0.
-                self.contrast = 0.
-                self.saturation = 0.
-                self.transformation = transforms.Compose([
-                        transforms.Resize([200, 200]),
-                        #transforms.Lambda(self.gaussian_blur),
-                        #transforms.ColorJitter(brightness=self.brightness, contrast=self.contrast, saturation=self.saturation),
-                        transforms.ToTensor()])
+
+            self.brightness = 0.
+            self.contrast = 0.
+            self.saturation = 0.
+            self.transformation = transforms.Compose([
+                    transforms.Resize([200, 200]),
+                    #transforms.Lambda(self.gaussian_blur),
+                    #transforms.ColorJitter(brightness=self.brightness, contrast=self.contrast, saturation=self.saturation),
+                    transforms.ToTensor()])
                 
             noise_coeff = self.brightness + self.contrast + self.saturation
 
@@ -705,8 +199,7 @@ class PoseSampler:
             #cv2.imwrite(os.path.join(self.base_path, 'images', "frame" + str(self.curr_idx).zfill(len(str(self.num_samples))) + '.png'), img_rgb)
             img =  Image.fromarray(img_rgb)
             image = self.transformation(img)
-            quad_pose = [self.quad.state[0], self.quad.state[1], self.quad.state[2], -self.quad.state[3], -self.quad.state[4], self.quad.state[5]]
-
+            
             with torch.no_grad():   
                 # Determine Gate location with Neural Networks
                 pose_gate_body = self.Dronet(image)
@@ -741,9 +234,6 @@ class PoseSampler:
                     if self.curr_idx >= (11 + cov_rep_num):
                         covariance_sum = np.sum(covariance_list[-cov_rep_num:]) / float(cov_rep_num)
 
-                    if covariance_sum > 10.:
-                        anyGate = False
-
                     # Gate ground truth values will be implemented
                     pose_gate_body = pose_gate_body.numpy().reshape(-1,1)
                 
@@ -751,157 +241,57 @@ class PoseSampler:
 
                     quadpose = self.client.simGetVehiclePose()
 
-                    waypoint_world = spherical_to_cartesian(quadpose, pose_gate_body)
+                    #rpy = R.from_euler("zyx",[quadpose.orientation.w_val,quadpose.orientation.x_val,quadpose.orientation.y_val,quadpose.orientation.z_val]).as_euler('zyx')
 
-                    pos0 = [self.quad.state[0], self.quad.state[1], self.quad.state[2]]
-                    vel0 = [self.quad.state[6], self.quad.state[7], self.quad.state[8]]
-                    ang_vel0 = [self.quad.state[9], self.quad.state[10], self.quad.state[11]]
+                    roll, pitch, yaw = self.euler_from_quaternion(quadpose.orientation.x_val,quadpose.orientation.y_val,quadpose.orientation.z_val,quadpose.orientation.w_val)
+                    drone_pos = [quadpose.position.x_val,quadpose.position.y_val,quadpose.position.z_val,roll,pitch,yaw]
+
+                    waypoint_world = spherical_to_cartesian(drone_pos, pose_gate_body)
+
+                    print("Waypoint Worlds: ",waypoint_world)
+
                     posf = [waypoint_world[0], waypoint_world[1], waypoint_world[2]]                    
-                    yaw0 = self.quad.state[5]
                     yaw_diff = pose_gate_body[3][0]
-                    self.yawf = (self.quad.state[5]+yaw_diff) + np.pi/2
+                    self.yawf = (drone_pos[5]+yaw_diff) + np.pi/2
 
-                    #yawf = Rotation.from_quat([self.track[self.current_gate].orientation.x_val, self.track[self.current_gate].orientation.y_val, 
-                    #                   self.track[self.current_gate].orientation.z_val, self.track[self.current_gate].orientation.w_val]).as_euler('ZYX',degrees=False)[0] - np.pi/2
-                    
                     print("\nCurrent index: {0}".format(self.curr_idx))
                     print("Predicted r: {0:.3}, Noise coeff: {1:.4}, Covariance sum: {2:.3}".format(pose_gate_body[0][0], sign_coeff*noise_coeff, covariance_sum))
-                    print("Predicted Gate Location: ",posf)
-                    print("True Gate Location: ", self.gate[0].position)
-                    print("True Quad Position: ", quadpose.position)
+                    print("Predicted Gate Location: ", posf)
+                    #print("True Gate Location: ", self.gate[0].position)
+                    print("True Quad Pose: ", drone_pos)
+                    print("yawf: ", self.yawf)
 
+                    x_cord = np.float32(posf[0]).item()
+                    y_cord = np.float32(posf[1]).item()
+                    z_cord = np.float32(posf[2]).item()
 
-                    quat_predicted = R.from_euler('ZYX',[0.,0.,self.yawf],degrees=True).as_quat()
-                    self.track = [Pose(Vector3r(posf[0],posf[1],posf[2]),Quaternionr(quat_predicted[0],quat_predicted[1],quat_predicted[2],quat_predicted[3]))]
-
-                    """ if self.parcour == "2gates":
-                        quat1 = R.from_euler('ZYX',[0,0,0] ,degrees=True).as_quat()
-                        self.respawn_gates(quat1)    
-                    else:
-                        self.fly_to_gate() """
+                    self.client.moveToPositionAsync(x_cord,y_cord,z_cord,2,drivetrain=DrivetrainType.ForwardOnly).join()
+                        
                     
-                    #state = self.quad.get_state()
-                    #quadpose = [state[0][0],state[0][1],state[0][2],-state[2][0],-state[2][1],self.yawf]
-
-                    #self.client.simSetVehiclePose(quadpose, True)
-
-                    #trajectory = self.get_waypoints()
-
-                    self.client.moveToPositionAsync(posf[0],posf[1],posf[2], 2)
-
-                    #self.client.reset()
-                    #time.sleep(10)
-
-                    
-                    #print "Brightness: {0:.3}, Contast: {1:.3}, Saturation: {2:.3}".format(self.brightness, self.contrast, self.saturation)
-                    if self.flight_log:
-                        f.write("\nCurrent index: {0}".format(self.curr_idx))
-                        f.write("\nPredicted r: {0:.3}, Noise coeff: {1:.4}, Covariance sum: {2:.3}".format(pose_gate_body[0][0], sign_coeff*noise_coeff, covariance_sum))
-                        #f.write("\nBrightness: {0:.3}, Contast: {1:.3}, Saturation: {2:.3}".format(self.brightness, self.contrast, self.saturation))
-                        f.write("\nMP algorithm: " + method)
-                        f.write("\nEstimated time of arrival: {0:.3} s.".format(self.Tf))
-                        f.write("\nGate Predicted, x: {0:.3}, y: {1:.3}, z: {2:.3}, psi: {3:.3} deg".format(waypoint_world[0], waypoint_world[1], waypoint_world[2], self.yawf*180/np.pi))
-
-
             self.curr_idx += 1
 
-        if self.flight_log:
-            f.close()
 
-    def QuadPose(self,quad_pose):
-        x, y, z, roll, pitch, yaw = quad_pose
-        q = R.from_euler('ZYX', [yaw, pitch, roll])  # capital letters denote intrinsic rotation (lower case would be extrinsic)
-    
-        q = q.as_quat()
-        t_o_b = Vector3r(x,y,z)
-        q_o_b = Quaternionr(q[0], q[1], q[2], q[3])
-        return Pose(t_o_b, q_o_b)
-
-    def respawn_gates(self,quat1):
-        j=2
-        
-        spawn_x = self.gate[1].position.x_val + uniform(-1,1)
-        spawn_y = self.gate[1].position.y_val + uniform(-5,-2)
-        spawn_z = self.gate[1].position.z_val + uniform(-0.1,0.1)
-        #spawnedGatePos = [self.gate[1].position.x_val + uniform(-1,1), self.gate[1].position.y_val + uniform(-5,-2), self.gate[1].position.z_val + uniform(-0.1,0.1)]
-        
-        self.fly_to_gate()
-
-        # Delete Gate
-        #self.configureEnvironment() 
-        gate_object = self.client.simListSceneObjects(".*[Gg]ate.*")
-        self.client.simDestroyObject(gate_object[0])
-        #time.sleep(0.05)
-        print("\n ####### Gate is destroyed #######")
-
-        self.gate[0] = self.gate[1]
-        self.gate[1] = Pose(Vector3r(spawn_x, spawn_y,spawn_z), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3]))            
-
-        gate_name = "gate_" + str(j)
-        self.tgt_name = self.client.simSpawnObject(gate_name, "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), 0.75)
-        #self.client.simSetObjectPose(gate_name, self.gate[1], True)
-        
-        self.track = self.gate
-        j = j+1
-
-
-    def fly_to_gate(self):
-
-        waypoints = self.get_waypoints()
-        traj = trajGenerator(waypoints,max_vel = 8,gamma = 1e6)
-        des_states = traj.get_des_state
-        Tmax = traj.TS[-1]
-
-        dt=1/200
-        T=10
-        N=int(T/dt)
-
-        t=np.linspace(0,T,N)
-
-        #state = self.quad.get_state()
-        #state[2][2] = self.yawf
-
-        for i in range(600):  #N
-        #i = 0
-        #while state[0][1] - 0.1 > self.gate[0].position.y_val:
-            #start_time = time.time()
-            #print("State (y): ", state[0][1])
-            #print("Gate (y): ", self.gate[0].position.y_val)
-            
-            state = self.quad.get_state()
-            quadpose = [state[0][0],state[0][1],state[0][2],-state[2][0],-state[2][1],self.yawf]
-
-            self.client.simSetVehiclePose(self.QuadPose(quadpose), True)
-            time.sleep(.04)
-            
-
-            
-            des_state=des_states(t[i])
-
-            if(t[i] >=Tmax):
-                U, M = controller.run_hover(state, des_state,dt)
-            else:
-                U, M = controller.run(state, des_state)
-
-            self.quad.update(dt,U,M)
-            #i=i+1
-            #print("--- %s seconds ---" % (time.time() - start_time))
-
-    def get_waypoints(self):
-
-        state = self.quad.get_state()
-
-        x=[]
-        y=[]
-        z=[]
-        x.append(state[0][0])
-        y.append(state[0][1])
-        z.append(state[0][2])
-        for i in range(len(self.track)):
-            x.append(self.track[i].position.x_val)
-            y.append(self.track[i].position.y_val)
-            z.append(self.track[i].position.z_val)
-        return np.stack((x, y, z), axis=-1)
+    def euler_from_quaternion(self,x, y, z, w):
+        """
+        Convert a quaternion into euler angles (roll, pitch, yaw)
+        roll is rotation around x in radians (counterclockwise)
+        pitch is rotation around y in radians (counterclockwise)
+        yaw is rotation around z in radians (counterclockwise)
+        """
+        t0 = +2.0 * (w * x + y * z)
+        t1 = +1.0 - 2.0 * (x * x + y * y)
+        roll_x = math.atan2(t0, t1)
+     
+        t2 = +2.0 * (w * y - z * x)
+        t2 = +1.0 if t2 > +1.0 else t2
+        t2 = -1.0 if t2 < -1.0 else t2
+        pitch_y = math.asin(t2)
+     
+        t3 = +2.0 * (w * z + x * y)
+        t4 = +1.0 - 2.0 * (y * y + z * z)
+        yaw_z = math.atan2(t3, t4)
+     
+        return roll_x, pitch_y, yaw_z # in radians
 
 
     def update(self, mode):
@@ -932,18 +322,14 @@ class PoseSampler:
             for i, gate in enumerate(self.track):
                 #print ("gate: ", gate)
                 gate_name = "gate_" + str(i)
-                self.tgt_name = self.client.simSpawnObject(gate_name, "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), 0.75)
+                self.tgt_name = self.client.simSpawnObject(gate_name, "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), Vector3r(0.75,0.75,0.75))
+                #self.tgt_name = self.client.simSpawnObject(gate_name, "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), 0.75)
                 self.client.simSetObjectPose(self.tgt_name, gate, True)
         # request quad img from AirSim
         time.sleep(0.001)
 
-        self.find_gate_edges()
-        self.find_gate_distances()
 
-        if self.flight_log:
-            f=open(self.log_path, "w")
-            f.write("\nMode %s \n" % mode)
-            f.close()
+
 
         if mode == "TEST":    
             self.mp_classifier.load_state_dict(torch.load(self.base_path + '/classifier_files/best_2.pt'))
@@ -968,63 +354,14 @@ class PoseSampler:
         else:
             print("There is no such a mode called " + "'" + mode + "'")
 
-
-
-    def visualize_drone(self):
-        cost_list = []
-        time_list = []
-        time_dict = {}
-        cost_dict = {}
-        file_name = "files/test_variables_" + self.test_number + ".pkl"
-        test_file = os.path.join(self.base_path, file_name)
-
-        # if not os.path.exists(test_file):
-        #     break
-        print("\nCurrent file: test_variables_{0}.pkl".format(self.test_number))
-        test_states, test_arrival_time, test_costs, test_safe_counter, test_distribution_on_noise, test_distribution_off_noise, test_covariances, test_methods = pickle.load(open(test_file, "rb"))
-        for mode in self.test_modes:
-            print("\nDrone flies using the algorithm, ", mode)
-            self.client.simSetVehiclePose(self.drone_init, True)
-            state_list = test_states[mode]
-            for state in state_list:
-                quad_pose = [state[0], state[1], state[2], -state[3], -state[4], state[5]]
-                self.client.simSetVehiclePose(QuadPose(quad_pose), True)
-                time.sleep(0.001)
-                
-            if test_costs[mode] == 1e12:
-                print("Drone has failed to complete the path!")
-            else:
-                print("Drone has completed the path successfully!")
-                cost_dict[mode] = test_costs[mode]
-                time_dict[mode] = test_arrival_time[mode]
-            print("Time of arrival is {0:.6} s.".format(test_arrival_time[mode]))
-            print("Total cost is {0:.6}".format(test_costs[mode]))
-            print("Drone has been in safe mode: {0} times".format(test_safe_counter[mode]))
-
-            if mode == "DICE_SAFE" or mode == "DICE_NO_SAFE" or mode == "MAX_SAFE" or mode == "MAX_NO_SAFE":
-                sum_val = float(np.sum(test_distribution_on_noise[mode].values()))
-                for sub_mode in test_distribution_on_noise[mode]:
-                    current_val = test_distribution_on_noise[mode][sub_mode]
-                    print("In noisy conditions, drone has been in mode, {0} {1} times, {2:.4}%".format(sub_mode, current_val, current_val/sum_val*100.))
-
-                sum_val = float(np.sum(test_distribution_off_noise[mode].values()))
-                for sub_mode in test_distribution_off_noise[mode]:
-                    current_val = test_distribution_off_noise[mode][sub_mode]
-                    print("In non noisy conditions, drone has been in mode, {0} {1} times, {2:.4}%".format(sub_mode, current_val, current_val/sum_val*100.))
-
-        cost_list.append(cost_dict)
-        time_list.append(time_dict)
-        pickle.dump([cost_list, time_list], open(self.base_path + "files/results_" + self.test_number +".pkl","wb"), protocol=2)
-
-                    
+    
     def configureEnvironment(self):
         for gate_object in self.client.simListSceneObjects(".*[Gg]ate.*"):
             self.client.simDestroyObject(gate_object)
             time.sleep(0.05)
         if self.with_gate:
-            #self.tgt_name = self.client.simSpawnObject("gate", "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), 0.75)
-            #self.tgt_name = self.client.simSpawnObject("gate", "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), Vector3r(1.5,1.5,1.5), physics_enabled=False)
-            print("x")
+            self.tgt_name = self.client.simSpawnObject("gate", "RedGate16x16", Pose(position_val=Vector3r(0,0,15)), Vector3r(0.75,0.75,0.75))
+            #self.tgt_name = self.client.simSpawnObject("gate", "Gate", Pose(position_val=Vector3r(0,0,15)), Vector3r(4,4,4), physics_enabled=False)
         else:
             self.tgt_name = "empty_target"
 
@@ -1033,22 +370,4 @@ class PoseSampler:
         else:
             self.file = open(self.csv_path, "w")
 
-    # write image to file
-    def writeImgToFile(self, image_response):
-        if len(image_response.image_data_uint8) == image_response.width * image_response.height * 3:
-            img1d = np.fromstring(image_response.image_data_uint8, dtype=np.uint8)  # get numpy array
-            img_rgb = img1d.reshape(image_response.height, image_response.width, 3)  # reshape array to 4 channel image array H X W X 3
-            print(image_response.height, image_response.width)
-            cv2.imwrite(os.path.join(self.base_path, 'images', "frame" + str(self.curr_idx).zfill(len(str(self.num_samples))) + '.png'), img_rgb)  # write to png
-        else:
-            print('ERROR IN IMAGE SIZE -- NOT SUPPOSED TO HAPPEN')
-
-    # writes your data to file
-    def writePosToFile(self, r, theta, psi, phi_rel):
-        data_string = '{0} {1} {2} {3}\n'.format(r, theta, psi, phi_rel)
-        self.file.write(data_string)
-
-    def write_stats(self, stats_columns, stats, filename): #testno,stats_columns
-        filename = os.path.join(self.base_path, filename)
-        df_stats = pd.DataFrame([stats], columns=stats_columns)
-        df_stats.to_csv(filename, mode='a', index=False, header=not os.path.isfile(filename))
+    
