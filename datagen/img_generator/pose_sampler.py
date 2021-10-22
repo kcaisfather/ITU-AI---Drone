@@ -132,6 +132,23 @@ class PoseSampler:
             quat_drone = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
             self.drone_init = Pose(Vector3r(5.,25.,-2), Quaternionr(quat_drone[0],quat_drone[1],quat_drone[2],quat_drone[3]))
 
+        elif self.parcour == "spline": # Spline
+            quat0 = R.from_euler('ZYX',[0.,0.,0.] ,degrees=True).as_quat()
+            quat1 = R.from_euler('ZYX',[20.,0.,0.],degrees=True).as_quat()
+            quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
+            quat3 = R.from_euler('ZYX',[-15.,0.,0.],degrees=True).as_quat()
+            quat4 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat()
+            quat5 = R.from_euler('ZYX',[20.,0.,0.],degrees=True).as_quat()
+            self.track = [Pose(Vector3r(0.,20.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]) , Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
+                        Pose(Vector3r(2.,10.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
+                        Pose(Vector3r(3.,0.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
+                        Pose(Vector3r(2.,-5.,-3) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
+                        Pose(Vector3r(0.,-10.,-3) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
+                        Pose(Vector3r(-1.,-25.,-2) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))]
+            
+            quat_drone = R.from_euler('ZYX',[-90.,0.,0.],degrees=True).as_quat()
+            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat_drone[0],quat_drone[1],quat_drone[2],quat_drone[3]))
+
             
             
             #Pose(Vector3r(30.,5.,-1) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
@@ -150,16 +167,20 @@ class PoseSampler:
         prediction_std = np.zeros((4,1),dtype=np.float32)
 
 
-        self.client.enableApiControl(True)
-        time.sleep(7)
+        while not self.client.isApiControlEnabled():
+            self.client.enableApiControl(True)
+        
         ApiControlCheck = self.client.isApiControlEnabled()
 
         #if drone is at initial point
         self.client.simSetVehiclePose(self.drone_init, True)
+        self.client.armDisarm(True)
+        
+        time.sleep(2)
 
         print("Api control enabled: ",ApiControlCheck)
         
-        self.client.moveToPositionAsync(10,25,-2,2,drivetrain=DrivetrainType.ForwardOnly).join()
+        self.client.moveToPositionAsync(0,25,-2.5,2,drivetrain=DrivetrainType.ForwardOnly).join()
         
         self.curr_idx = 0
     
@@ -261,11 +282,20 @@ class PoseSampler:
                     print("True Quad Pose: ", drone_pos)
                     print("yawf: ", self.yawf)
 
-                    x_cord = np.float32(posf[0]).item()
-                    y_cord = np.float32(posf[1]).item()
-                    z_cord = np.float32(posf[2]).item()
+                    x_gate = np.float32(posf[0]).item()
+                    y_gate = np.float32(posf[1]).item()
+                    z_gate = np.float32(posf[2]).item()
 
-                    self.client.moveToPositionAsync(x_cord,y_cord,z_cord,2,drivetrain=DrivetrainType.ForwardOnly).join()
+                    x_target = drone_pos[0] + ((x_gate-drone_pos[0])/3)
+                    y_target = drone_pos[1] + ((y_gate-drone_pos[1])/3)
+                    z_target = drone_pos[2] + ((z_gate-drone_pos[2])/3)
+
+                    if self.curr_idx % 5 == 1:
+                        x_target = posf[0]
+                        y_target = posf[1]
+                        z_target = posf[2]
+
+                    self.client.moveToPositionAsync(x_target,y_target,z_target,1,drivetrain=DrivetrainType.ForwardOnly).join()
                         
                     
             self.curr_idx += 1
