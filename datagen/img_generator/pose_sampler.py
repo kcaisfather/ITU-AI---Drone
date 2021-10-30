@@ -114,7 +114,7 @@ class PoseSampler:
             rand_z.append(uniform(-0.15,0.15))
         
 
-        if self.parcour == "hexa": # hexagon
+        if parcour == "hexa": # hexagon
             quat0 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat()
             quat1 = R.from_euler('ZYX',[30.,0.,0.],degrees=True).as_quat()
             quat2 = R.from_euler('ZYX',[-30.,0.,0.],degrees=True).as_quat()
@@ -122,8 +122,8 @@ class PoseSampler:
             quat4 = R.from_euler('ZYX',[-150.,0.,0.],degrees=True).as_quat() 
             quat5 = R.from_euler('ZYX',[-210.,0.,0.],degrees=True).as_quat() 
             self.track = [Pose(Vector3r(10.,25.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
-                        Pose(Vector3r(20.,15.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
-                        Pose(Vector3r(20.,5.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
+                        Pose(Vector3r(25.,15.,-1) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
+                        Pose(Vector3r(25.,5.,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
                         Pose(Vector3r(10.,-5,-3) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
                         Pose(Vector3r(-5.,5.,-3) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
                         Pose(Vector3r(-5.,15.,-2) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3]))]
@@ -131,6 +131,75 @@ class PoseSampler:
 
             quat_drone = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
             self.drone_init = Pose(Vector3r(5.,25.,-2), Quaternionr(quat_drone[0],quat_drone[1],quat_drone[2],quat_drone[3]))
+        
+        
+        elif parcour == "eight": # Eight - Infinity
+            quat0 = R.from_euler('ZYX',[55.,0.,0.],degrees=True).as_quat()
+            quat1 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
+            quat2 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
+            quat3 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat()
+            quat4 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()  
+            quat5 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat() 
+            quat6 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat() 
+            quat7 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat() 
+            quat8 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat() 
+            quat9 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat() 
+            quat10 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()  
+            quat11 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat()
+            quat12 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()  
+            quat13 = R.from_euler('ZYX',[45.,0.,0.],degrees=True).as_quat() 
+            quat14 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat() 
+            quat15 = R.from_euler('ZYX',[-45.,0.,0.],degrees=True).as_quat() 
+            
+            self.track = [Pose(Vector3r(1. ,18.,-2.) + Vector3r(rand_x[0],rand_y[0],rand_z[0]), Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
+                        Pose(Vector3r(5. ,15.,-1.) + Vector3r(rand_x[1],rand_y[1],rand_z[1]), Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
+                        Pose(Vector3r(9. ,10. ,-1.5) + Vector3r(rand_x[2],rand_y[2],rand_z[2]), Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
+                        Pose(Vector3r(5. ,5. ,-2) + Vector3r(rand_x[3],rand_y[3],rand_z[3]), Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
+                        Pose(Vector3r(0.,0.,-1) + Vector3r(rand_x[4],rand_y[4],rand_z[4]), Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
+                        Pose(Vector3r(-5.,-5.,-1.5) + Vector3r(rand_x[5],rand_y[5],rand_z[5]), Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3])),
+                        Pose(Vector3r(-9.,-10.,-2.5) + Vector3r(rand_x[6],rand_y[6],rand_z[6]), Quaternionr(quat6[0],quat6[1],quat6[2],quat6[3])),
+                        Pose(Vector3r(-5.,-15.,-3) + Vector3r(rand_x[7],rand_y[7],rand_z[7]), Quaternionr(quat7[0],quat7[1],quat7[2],quat7[3])),
+                        Pose(Vector3r(0.,-18.,-2) + Vector3r(rand_x[8],rand_y[8],rand_z[8]), Quaternionr(quat8[0],quat8[1],quat8[2],quat8[3])),
+                        Pose(Vector3r(5.,-15.,-1) + Vector3r(rand_x[9],rand_y[9],rand_z[9]), Quaternionr(quat9[0],quat9[1],quat9[2],quat9[3])),
+                        Pose(Vector3r(9.,-10.,-1.5) + Vector3r(rand_x[10],rand_y[10],rand_z[10]), Quaternionr(quat10[0],quat10[1],quat10[2],quat10[3])),
+                        Pose(Vector3r(5.,-5.,-2) + Vector3r(rand_x[11],rand_y[11],rand_z[11]), Quaternionr(quat11[0],quat11[1],quat11[2],quat11[3])), 
+                        Pose(Vector3r(0.,0.,-3) + Vector3r(rand_x[12],rand_y[12],rand_z[12]), Quaternionr(quat12[0],quat12[1],quat12[2],quat12[3])),
+                        Pose(Vector3r(-5.,5.,-2) + Vector3r(rand_x[13],rand_y[13],rand_z[13]), Quaternionr(quat13[0],quat13[1],quat13[2],quat13[3])),
+                        Pose(Vector3r(-9.,10.,-3) + Vector3r(rand_x[14],rand_y[14],rand_z[14]), Quaternionr(quat14[0],quat14[1],quat14[2],quat14[3])),
+                        Pose(Vector3r(-5.,15.,-2.5) + Vector3r(rand_x[15],rand_y[15],rand_z[15]), Quaternionr(quat15[0],quat15[1],quat15[2],quat15[3]))]
+            
+            quat_drone = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
+            self.drone_init = Pose(Vector3r(0.,30.,-2), Quaternionr(quat_drone[0],quat_drone[1],quat_drone[2],quat_drone[3]))
+
+
+        elif parcour == "circle": # Circle
+            quat0 = R.from_euler('ZYX',[90.,0.,0.],degrees=True).as_quat()
+            quat1 = R.from_euler('ZYX',[60.,0.,0.],degrees=True).as_quat()
+            quat2 = R.from_euler('ZYX',[30.,0.,0.],degrees=True).as_quat()
+            quat3 = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
+            quat4 = R.from_euler('ZYX',[-30.,0.,0.],degrees=True).as_quat() 
+            quat5 = R.from_euler('ZYX',[-60.,0.,0.],degrees=True).as_quat() 
+            quat6 = R.from_euler('ZYX',[-90.,0.,0.],degrees=True).as_quat()
+            quat7 = R.from_euler('ZYX',[-120.,0.,0.],degrees=True).as_quat()
+            quat8 = R.from_euler('ZYX',[-150.,0.,0.],degrees=True).as_quat()
+            quat9 = R.from_euler('ZYX',[-180.,0.,0.],degrees=True).as_quat()
+            quat10 = R.from_euler('ZYX',[-210.,0.,0.],degrees=True).as_quat()
+            quat11 = R.from_euler('ZYX',[-250.,0.,0.],degrees=True).as_quat()
+            self.track = [Pose(Vector3r(0.,10.,-2.) , Quaternionr(quat0[0],quat0[1],quat0[2],quat0[3])),
+                        Pose(Vector3r(5.,8.66,-2) , Quaternionr(quat1[0],quat1[1],quat1[2],quat1[3])),
+                        Pose(Vector3r(8.66,5.,-2) , Quaternionr(quat2[0],quat2[1],quat2[2],quat2[3])),
+                        Pose(Vector3r(10.,0.,-2) , Quaternionr(quat3[0],quat3[1],quat3[2],quat3[3])),
+                        Pose(Vector3r(8.66,-5.,-2) , Quaternionr(quat4[0],quat4[1],quat4[2],quat4[3])),
+                        Pose(Vector3r(5.,-8.66,-2) , Quaternionr(quat5[0],quat5[1],quat5[2],quat5[3])), 
+                        Pose(Vector3r(0.,-10.,-2) , Quaternionr(quat6[0],quat6[1],quat6[2],quat6[3])),
+                        Pose(Vector3r(-5.,-8.66,-2) , Quaternionr(quat7[0],quat7[1],quat7[2],quat7[3])),
+                        Pose(Vector3r(-8.66,-5,-2) , Quaternionr(quat8[0],quat8[1],quat8[2],quat8[3])),
+                        Pose(Vector3r(-10.,0,-2) , Quaternionr(quat9[0],quat9[1],quat9[2],quat9[3])),
+                        Pose(Vector3r(-8.66,5.,-2) , Quaternionr(quat10[0],quat10[1],quat10[2],quat10[3])),
+                        Pose(Vector3r(-5.,8.66,-2) , Quaternionr(quat11[0],quat11[1],quat11[2],quat11[3]))]
+            
+            quat_drone = R.from_euler('ZYX',[0.,0.,0.],degrees=True).as_quat()
+            self.drone_init = Pose(Vector3r(-5.,10.,-2), Quaternionr(quat_drone[0],quat_drone[1],quat_drone[2],quat_drone[3]))
 
         elif self.parcour == "spline": # Spline
             quat0 = R.from_euler('ZYX',[0.,0.,0.] ,degrees=True).as_quat()
@@ -180,9 +249,18 @@ class PoseSampler:
 
         print("Api control enabled: ",ApiControlCheck)
         
-        self.client.moveToPositionAsync(0,25,-2.5,2,drivetrain=DrivetrainType.ForwardOnly).join()
+        if self.parcour == "circle":
+            self.client.moveToPositionAsync(-3,10,-2.2,1,drivetrain=DrivetrainType.ForwardOnly).join()
+            path_step = 2
+        elif self.parcour == "spline":
+            self.client.moveToPositionAsync(0,25,-2.3,1,drivetrain=DrivetrainType.ForwardOnly).join()
+            path_step = 4
+        elif self.parcour == "hexa":
+            self.client.moveToPositionAsync(7,25,-2.3,1,drivetrain=DrivetrainType.ForwardOnly).join()
+            path_step = 3
         
         self.curr_idx = 0
+        path_index = 0
     
         track_completed = False
         fail_check = False
@@ -286,16 +364,19 @@ class PoseSampler:
                     y_gate = np.float32(posf[1]).item()
                     z_gate = np.float32(posf[2]).item()
 
-                    x_target = drone_pos[0] + ((x_gate-drone_pos[0])/3)
-                    y_target = drone_pos[1] + ((y_gate-drone_pos[1])/3)
-                    z_target = drone_pos[2] + ((z_gate-drone_pos[2])/3)
+                    x_target = drone_pos[0] + ((x_gate-drone_pos[0])/2)
+                    y_target = drone_pos[1] + ((y_gate-drone_pos[1])/2)
+                    z_target = drone_pos[2] + ((z_gate-drone_pos[2])/2)
 
-                    if self.curr_idx % 5 == 1:
+                    if path_index % path_step == 1:
                         x_target = posf[0]
                         y_target = posf[1]
                         z_target = posf[2]
 
-                    self.client.moveToPositionAsync(x_target,y_target,z_target,1,drivetrain=DrivetrainType.ForwardOnly).join()
+                    print("The point drone is going: ", x_target, " , ", y_target," , ",z_target)
+                    self.client.moveToPositionAsync(x_target,y_target,z_target,1.2,drivetrain=DrivetrainType.ForwardOnly).join()
+
+                    path_index += 1
                         
                     
             self.curr_idx += 1

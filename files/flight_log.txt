@@ -1,2 +1,8 @@
 
 Mode TEST 
+
+Current index: 11
+Predicted r: 5.37, Noise coeff: 0.0, Covariance sum: 0.038
+MP algorithm: DICE_SAFE
+Estimated time of arrival: 0.0 s.
+Gate Predicted, x: 10.4, y: 24.8, z: -1.83, psi: 7.78 deg
